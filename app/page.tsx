@@ -10,6 +10,7 @@ import InterviewShowcase from "@/components/InterviewShowcase"
 import Footer from "@/components/Footer"
 import Testimonials from "@/components/Testimonials"
 import CtaSection from "@/components/ctaSection"
+import LaunchToast from "@/components/LaunchToast"
 export default function Page() {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const paragraphRef = useRef<HTMLParagraphElement>(null)
@@ -56,6 +57,7 @@ export default function Page() {
 
   return (
     <section className="relative overflow-hidden text-white">
+      <LaunchToast />
       <div
         style={{ transform: "translateX(-50%)" }}
         className="absolute top-[-300px] left-[50%] w-[70%] h-[700px] bg-gradient-radial from-[#e072ff] via-[#8b5cf6] to-transparent opacity-55 blur-[200px] rounded-full pointer-events-none"
