@@ -23,7 +23,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-6 w-full z-50">
-      <LayoutWrapper>
+      <section className="w-[90%] max-w-screen-xl mx-auto">
         <div
           ref={navbarRef}
           className="px-6 py-4 rounded-full backdrop-blur-lg bg-white/10 shadow-lg flex items-center justify-between"
@@ -50,11 +50,11 @@ export function Navbar() {
               Dashboard
             </Button>
             <Button className="bg-transparent border border-white text-white px-8 py-4 hover:bg-white/40 rounded-full font-light hover:text-white transition text-base">
-              Get a Demo
+              Get Demo &nbsp;&#8594;
             </Button>
           </div>
         </div>
-      </LayoutWrapper>
+      </section>
     </header>
   )
 }

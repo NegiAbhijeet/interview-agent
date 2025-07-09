@@ -2,7 +2,7 @@ import React from 'react';
 
 const CtaSection = () => {
   return (
-    <div className="relative rounded-[2rem] overflow-hidden text-white p-10 bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900">
+    <div className="relative w-full rounded-[2rem] overflow-hidden text-white p-10 bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900">
       {/* Radial Gradient Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute max-w-[1000px] w-[70%] h-[600px] bg-purple-500 opacity-40 blur-2xl rounded-full top-[-200px] left-1/2 transform -translate-x-1/2" />
@@ -27,7 +27,7 @@ const CtaSection = () => {
         <p className="text-lg text-white/80">Questions? Curious? Connect with us.</p>
         <div className="flex justify-center gap-4 pt-4 flex-wrap">
           <button className="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
-            Book a Demo
+            Get Demo &nbsp;&#8594;
           </button>
           <button className="bg-white/10 border border-white/30 text-white font-medium px-6 py-3 rounded-full backdrop-blur-sm flex items-center gap-2 hover:bg-white/20 transition">
             ▶ View 5 min demo

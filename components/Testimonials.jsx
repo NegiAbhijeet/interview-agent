@@ -34,7 +34,7 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center py-12 md:py-24 lg:py-32 relative">
+        <section className="w-full min-h-screen flex flex-col items-center justify-center relative">
             {/* Gradient Background Bar */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
                 <div className="space-y-2">
