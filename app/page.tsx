@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { LayoutWrapper } from "@/components/layout-wrapper"
-import { Button } from "@/components/ui/button"
+import FilledButtonWrapper from "@/components/filledButtonWrapper"
 import { CheckCircle, Clock, Edit3, MessageSquare } from "lucide-react"
 import gsap from "gsap"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,6 +11,7 @@ import Footer from "@/components/Footer"
 import Testimonials from "@/components/Testimonials"
 import CtaSection from "@/components/ctaSection"
 import LaunchToast from "@/components/LaunchToast"
+import OutlineButtonWrapper from "@/components/OutlineButtonWrapper"
 export default function Page() {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const paragraphRef = useRef<HTMLParagraphElement>(null)
@@ -74,12 +75,15 @@ export default function Page() {
             Hire faster and ace your interview
           </div>
           <div className="mt-8 flex items-center gap-4 justify-center w-full">
-            <Button className="px-8 py-4 rounded-full text-base border bg-white text-black border-white hover:bg-white hover:text-black transition">
+
+
+            <FilledButtonWrapper>
               Start Screening
-            </Button>
-            <Button className="px-8 py-4 rounded-full text-base bg-transparent border border-white text-white hover:bg-white hover:text-black transition">
-              Get Demo &nbsp;&#8594;
-            </Button>
+            </FilledButtonWrapper>
+            <OutlineButtonWrapper>
+              Get Demo
+            </OutlineButtonWrapper>
+
           </div>
           <div className="mt-10">
             <a href="#learn-more" className="text-gray-500 hover:text-white transition">Learn more ↓</a>

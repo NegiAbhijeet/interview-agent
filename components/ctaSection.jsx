@@ -1,5 +1,6 @@
 import React from 'react';
-
+import FilledButtonWrapper from './filledButtonWrapper';
+import OutlineButtonWrapper from "./OutlineButtonWrapper"
 const CtaSection = () => {
   return (
     <div className="relative w-full rounded-[2rem] overflow-hidden text-white p-10 bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900">
@@ -26,12 +27,12 @@ const CtaSection = () => {
         <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2>
         <p className="text-lg text-white/80">Questions? Curious? Connect with us.</p>
         <div className="flex justify-center gap-4 pt-4 flex-wrap">
-          <button className="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
-            Get Demo &nbsp;&#8594;
-          </button>
-          <button className="bg-white/10 border border-white/30 text-white font-medium px-6 py-3 rounded-full backdrop-blur-sm flex items-center gap-2 hover:bg-white/20 transition">
+          <OutlineButtonWrapper>
+            Get Demo
+          </OutlineButtonWrapper>
+          <FilledButtonWrapper>
             ▶ View 5 min demo
-          </button>
+          </FilledButtonWrapper>
         </div>
       </div>
     </div>
@@ -39,3 +40,6 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
+
+
+

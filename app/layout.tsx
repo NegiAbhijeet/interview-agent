@@ -22,7 +22,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: 'AI Interview Agent',
   description: 'Created with v0',
   generator: 'v0.dev',
 }

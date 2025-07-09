@@ -6,7 +6,8 @@ import { Button } from "./ui/button"
 import { LayoutWrapper } from "./layout-wrapper"
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
-
+import FilledButtonWrapper from "./filledButtonWrapper"
+import OutlineButtonWrapper from "./OutlineButtonWrapper"
 export function Navbar() {
   const navbarRef = useRef(null)
 
@@ -46,12 +47,14 @@ export function Navbar() {
 
           {/* Right: Login Button */}
           <div className="flex items-center gap-4">
-            <Button className="bg-transparent rounded-full  bg-white text-black px-8 py-4 hover:bg-white/40 font-light hover:text-white transition text-base">
+
+
+            <FilledButtonWrapper>
               Dashboard
-            </Button>
-            <Button className="bg-transparent border border-white text-white px-8 py-4 hover:bg-white/40 rounded-full font-light hover:text-white transition text-base">
-              Get Demo &nbsp;&#8594;
-            </Button>
+            </FilledButtonWrapper>
+            <OutlineButtonWrapper>
+              Get Demo
+            </OutlineButtonWrapper>
           </div>
         </div>
       </section>
