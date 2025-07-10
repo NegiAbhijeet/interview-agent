@@ -17,43 +17,57 @@ export default function Page() {
   const paragraphRef = useRef<HTMLParagraphElement>(null)
   const buttonsRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLDivElement>(null)
-
+  const startRef = useRef(null)
+  const demoRef = useRef(null)
   useEffect(() => {
     const tl = gsap.timeline({
-      delay: 0.5, // 👈 starts after navbar finishes
-      defaults: { ease: "power3.out", duration: 0.6 }
-    })
+      delay: 0.5,
+      defaults: { ease: "power3.out", duration: 0.6 },
+    });
 
     if (headingRef.current) {
       tl.from(headingRef.current, {
-        x: -60,
+        scale: 1.2,
         opacity: 0,
-      })
+      });
     }
 
     if (imageRef.current) {
-      tl.from(imageRef.current, {
-        x: 60,
-        opacity: 0,
-      }, "<")
+      tl.from(
+        imageRef.current,
+        {
+          x: 60,
+          opacity: 0,
+        },
+        "<"
+      );
     }
 
     if (paragraphRef.current) {
-      tl.from(paragraphRef.current, {
-        x: -60,
-        opacity: 0,
-      }, "-=0.4") // slight overlap
+      tl.from(
+        paragraphRef.current,
+        {
+          scale: 0.95,
+          opacity: 0,
+          y: 20,
+        },
+        "-=0.4"
+      );
     }
 
-    if (buttonsRef.current) {
-      const buttons = buttonsRef.current.querySelectorAll("a")
-      tl.from(buttons, {
-        x: -30,
+    tl.from(
+      [startRef.current, demoRef.current],
+      {
+        scale: 0.8,
         opacity: 0,
-        stagger: 0.15,
-      }, "-=0.3")
-    }
-  }, [])
+        stagger: 0.2,
+        ease: "back.out(1.7)",
+      },
+      "-=0.3"
+    );
+  }, []);
+
+
 
 
   return (
@@ -66,24 +80,21 @@ export default function Page() {
 
       <LayoutWrapper>
         <div className="text-center z-10 text-white flex flex-col relative overflow-hidden pt-[10%]">
-          <h1 className="text-4xl md:text-6xl font-normal leading-tight text-gray-400">
+          <h1 ref={headingRef} className="text-4xl md:text-6xl font-normal leading-tight text-gray-400">
             Meet <span className="text-white font-light">Nova</span>.
             <br />
             <span className="text-gray-400 font-normal">Your Interview Assistant.</span>
           </h1>
-          <div className="mt-6 max-w-3xl mx-auto text-2xl font-light text-gray-200">
+          <div ref={paragraphRef} className="mt-6 max-w-3xl mx-auto text-2xl font-light text-gray-200">
             Hire faster and ace your interview
           </div>
-          <div className="mt-8 flex items-center gap-4 justify-center w-full">
-
-
-            <FilledButtonWrapper>
-              Start Screening
-            </FilledButtonWrapper>
-            <OutlineButtonWrapper>
-              Get Demo
-            </OutlineButtonWrapper>
-
+          <div className="mt-8 flex items-center gap-4 justify-center w-full" ref={buttonsRef}>
+            <div ref={startRef}>
+              <FilledButtonWrapper>Start Screening</FilledButtonWrapper>
+            </div>
+            <div ref={demoRef}>
+              <OutlineButtonWrapper>Get Demo</OutlineButtonWrapper>
+            </div>
           </div>
           <div className="mt-10">
             <a href="#learn-more" className="text-gray-500 hover:text-white transition">Learn more ↓</a>
