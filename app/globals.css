@@ -185,7 +185,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: royalblue;
+    background: black;
     z-index: -1;
     transition: transform 400ms ease-out;
     transform: scaleX(0);
