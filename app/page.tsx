@@ -12,6 +12,7 @@ import Testimonials from "@/components/Testimonials"
 import CtaSection from "@/components/ctaSection"
 import LaunchToast from "@/components/LaunchToast"
 import OutlineButtonWrapper from "@/components/OutlineButtonWrapper"
+import FeatureSection from "@/components/featureSection"
 export default function Page() {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const paragraphRef = useRef<HTMLParagraphElement>(null)
@@ -106,81 +107,7 @@ export default function Page() {
         <InterviewShowcase />
       </LayoutWrapper>
 
-      <LayoutWrapper id="learn-more">
-        <div>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm text-purple-600">Features</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Everything you need for smarter interviews</h2>
-              <p className="max-w-[900px] mx-auto text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">One platform for Recruiters, HR Agencies, and Motivated Candidates.</p>
-            </div>
-          </div>
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 pt-12 md:grid-cols-2 lg:grid-cols-4 relative">
-            <div style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: "-1" }} className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none " />
-
-            <div className="spectacledcoder-gradient-card">
-              <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                <CardHeader className="pb-2">
-                  <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                    <CheckCircle className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-white">AI-Powered Agent</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400">
-                    Joins the call, asks every question for you, records and logs each answer.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="spectacledcoder-gradient-card">
-              <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                <CardHeader className="pb-2">
-                  <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                    <Edit3 className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-white">Scripted Interviews</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400">
-                    Every candidate hears the same set of questions that match your job requirement, so results stay fair.
-                  </CardDescription>
-                </CardContent>
-              </Card></div>
-
-            <div className="spectacledcoder-gradient-card">
-              <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                <CardHeader className="pb-2">
-                  <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                    <Clock className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-white">Mock Interview Mode</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400">
-                    Candidates get instant practice with AI feedback and 15 free minutes that refill daily.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="spectacledcoder-gradient-card">
-              <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                <CardHeader className="pb-2">
-                  <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                    <MessageSquare className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-white">Searchable Transcript</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400">
-                    A time-stamped transcript and short summary land in your inbox when the call ends.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </LayoutWrapper>
+      <FeatureSection />
 
 
       <LayoutWrapper>

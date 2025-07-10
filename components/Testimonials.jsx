@@ -38,9 +38,9 @@ export default function Testimonials() {
             {/* Gradient Background Bar */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
                 <div className="space-y-2">
-                    <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm text-gray-600">Trusted by leading HR teams</div>
+                    <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">Trusted by leading HR teams</div>
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">See how AI Interview Agent improves hiring and preparation</h2>
-                    <p className="max-w-[900px] mx-auto text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Real stories from Recruiters, Agencies, and Candidates.</p>
+                    <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Real stories from Recruiters, Agencies, and Candidates.</p>
                 </div>
             </div>
             <div className="relative z-10 max-w-7xl mx-auto text-center">
