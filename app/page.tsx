@@ -95,8 +95,8 @@ export default function Page() {
         <InterviewShowcase />
       </LayoutWrapper>
 
-      <LayoutWrapper>
-        <div className="">
+      <LayoutWrapper id="learn-more">
+        <div>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm text-purple-600">Features</div>
@@ -104,7 +104,7 @@ export default function Page() {
               <p className="max-w-[900px] mx-auto text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">One platform for Recruiters, HR Agencies, and Motivated Candidates.</p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-4 relative">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 pt-12 md:grid-cols-2 lg:grid-cols-4 relative">
             <div style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: "-1" }} className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none " />
 
             <div className="spectacledcoder-gradient-card">
