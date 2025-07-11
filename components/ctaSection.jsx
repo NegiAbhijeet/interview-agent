@@ -12,37 +12,45 @@ const CtaSection = () => {
   const textRef = useRef(null);
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 80%', // Start when the top of section is 80% down viewport
-          once: true,       // Optional: only trigger once
-        },
+ useEffect(() => {
+  const ctx = gsap.context(() => {
+    // Infinite message loop
+    const messageTl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+    const messages = [
+      "👋 Hi! I'm Nova. Are you ready to start hiring?",
+      "💡 Ready to discover top talent?"
+    ];
+
+    messages.forEach((msg) => {
+      messageTl.to(textRef.current, {
+        duration: 2,
+        text: msg,
+        ease: "power1.inOut",
+      }).to(textRef.current, {
+        duration: 0.5,
+        delay: 1,
+        text: "",
+        ease: "power1.inOut",
       });
+    });
 
-      const messages = [
-        "👋 Hi! I'm Nova. Are you ready to start hiring?",
-        "💡 Ready to discover top talent?"
-      ];
+    // Pop-up animation for section
+    gsap.from(sectionRef.current, {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 70%",  // Trigger when top of section hits 70% of viewport height (i.e., 30% from bottom)
+        toggleActions: "play none none none",
+      },
+    });
+  }, sectionRef);
 
-      messages.forEach((msg) => {
-        tl.to(textRef.current, {
-          duration: 2,
-          text: msg,
-          ease: "power1.inOut",
-        }).to(textRef.current, {
-          duration: 0.5,
-          delay: 1,
-          text: "",
-          ease: "power1.inOut",
-        });
-      });
-    }, sectionRef);
+  return () => ctx.revert();
+}, []);
 
-    return () => ctx.revert(); // Clean up on unmount
-  }, []);
 
   return (
     <div

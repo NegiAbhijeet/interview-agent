@@ -50,6 +50,39 @@ const FeatureSection = () => {
   const headingRef = useRef(null);
   const paragraphRef = useRef(null);
   const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+        },
+      });
+
+      // First animate heading and paragraph
+      tl.from([headingRef.current, paragraphRef.current], {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.2,
+      });
+
+      // Then animate cards
+      tl.from(cardRefs.current, {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.2,
+      }, "+=0.2"); // optional delay between heading and cards
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+
   return (
     <LayoutWrapper id="learn-more">
       <div ref={sectionRef}>

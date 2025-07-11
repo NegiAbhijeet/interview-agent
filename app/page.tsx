@@ -3,9 +3,8 @@
 import { useEffect, useRef } from "react"
 import { LayoutWrapper } from "@/components/layout-wrapper"
 import FilledButtonWrapper from "@/components/filledButtonWrapper"
-import { CheckCircle, Clock, Edit3, MessageSquare } from "lucide-react"
 import gsap from "gsap"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import CategorySection from "@/components/categorySection" 
 import InterviewShowcase from "@/components/InterviewShowcase"
 import Footer from "@/components/Footer"
 import Testimonials from "@/components/Testimonials"
@@ -13,6 +12,7 @@ import CtaSection from "@/components/ctaSection"
 import LaunchToast from "@/components/LaunchToast"
 import OutlineButtonWrapper from "@/components/OutlineButtonWrapper"
 import FeatureSection from "@/components/featureSection"
+
 export default function Page() {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const paragraphRef = useRef<HTMLParagraphElement>(null)
@@ -109,7 +109,7 @@ export default function Page() {
 
       <FeatureSection />
 
-
+<LayoutWrapper><CategorySection /></LayoutWrapper>
       <LayoutWrapper>
         <Testimonials />
       </LayoutWrapper>
