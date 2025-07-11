@@ -39,9 +39,9 @@ export function Navbar() {
 
           {/* Center: Nav Links */}
           <nav className="hidden md:flex space-x-6 text-sm font-semibold gap-6">
-            <Link href="#" className="hover:text-white/80 transition">Home</Link>
-            <Link href="#" className="hover:text-white/80 transition">Pricing</Link>
-            <Link href="#" className="hover:text-white/80 transition">About</Link>
+            <Link href="/" className="hover:text-white/80 transition">Home</Link>
+            <Link href="/pricing" className="hover:text-white/80 transition">Pricing</Link>
+            <Link href="/about" className="hover:text-white/80 transition">About</Link>
             <Link href="#" className="hover:text-white/80 transition">Contact</Link>
           </nav>
 

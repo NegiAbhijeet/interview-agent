@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import { LayoutWrapper } from "@/components/layout-wrapper"
 import FilledButtonWrapper from "@/components/filledButtonWrapper"
 import gsap from "gsap"
-import CategorySection from "@/components/categorySection" 
+import CategorySection from "@/components/categorySection"
 import InterviewShowcase from "@/components/InterviewShowcase"
 import Footer from "@/components/Footer"
 import Testimonials from "@/components/Testimonials"
@@ -74,11 +74,6 @@ export default function Page() {
   return (
     <section className="relative overflow-hidden text-white">
       <LaunchToast />
-      <div
-        style={{ transform: "translateX(-50%)" }}
-        className="absolute top-[-300px] left-[50%] w-[70%] h-[700px] bg-gradient-radial from-[#e072ff] via-[#8b5cf6] to-transparent opacity-55 blur-[200px] rounded-full pointer-events-none"
-      ></div>
-
       <LayoutWrapper>
         <div className="text-center z-10 text-white flex flex-col relative overflow-hidden pt-[10%]">
           <h1 ref={headingRef} className="text-4xl md:text-6xl font-normal leading-tight text-gray-400">
@@ -109,7 +104,7 @@ export default function Page() {
 
       <FeatureSection />
 
-<LayoutWrapper><CategorySection /></LayoutWrapper>
+      <LayoutWrapper><CategorySection /></LayoutWrapper>
       <LayoutWrapper>
         <Testimonials />
       </LayoutWrapper>
