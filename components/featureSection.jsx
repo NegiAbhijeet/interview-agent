@@ -1,6 +1,3 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { LayoutWrapper } from "./layout-wrapper";
 import {
   Card,
@@ -15,8 +12,6 @@ import {
   Clock,
   MessageSquare,
 } from "lucide-react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
@@ -46,60 +41,34 @@ const features = [
 ];
 
 const FeatureSection = () => {
-  const sectionRef = useRef(null);
-  const headingRef = useRef(null);
-  const paragraphRef = useRef(null);
-  const cardRefs = useRef([]);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 50%",
-        },
-      });
-
-      // First animate heading and paragraph
-      tl.from([headingRef.current, paragraphRef.current], {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.2,
-      });
-
-      // Then animate cards
-      tl.from(cardRefs.current, {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.2,
-      }, "+=0.2"); // optional delay between heading and cards
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
-
   return (
     <LayoutWrapper id="learn-more">
-      <div ref={sectionRef}>
+      <div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">
+            <div
+              className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-duration="600"
+            >
               Features
             </div>
+
             <h2
-              ref={headingRef}
               className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="600"
             >
               Everything you need for smarter interviews
             </h2>
+
             <p
-              ref={paragraphRef}
               className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600"
             >
               One platform for Recruiters, HR Agencies, and Motivated Candidates.
             </p>
@@ -124,7 +93,9 @@ const FeatureSection = () => {
               <div
                 key={index}
                 className="spectacledcoder-gradient-card"
-                ref={(el) => (cardRefs.current[index] = el)}
+                data-aos="fade-up"
+                data-aos-delay={`${600 + index * 100}`} // staggered delay
+                data-aos-duration="600"
               >
                 <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
                   <CardHeader className="pb-2">

@@ -2,31 +2,15 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "./ui/button"
-import { LayoutWrapper } from "./layout-wrapper"
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
 import FilledButtonWrapper from "./filledButtonWrapper"
 import OutlineButtonWrapper from "./OutlineButtonWrapper"
+
 export function Navbar() {
-  const navbarRef = useRef(null)
-
-  useEffect(() => {
-    if (navbarRef.current) {
-      gsap.from(navbarRef.current, {
-        y: -100,
-        opacity: 0,
-        duration: 1,
-        ease: "power4.out",
-      })
-    }
-  }, [])
-
   return (
-    <header className="fixed top-6 w-full z-50">
+    <header className="fixed top-6 w-full z-50" data-aos="fade-down"
+      data-aos-duration="600">
       <section className="w-[90%] max-w-screen-xl mx-auto">
         <div
-          ref={navbarRef}
           className="px-6 py-4 rounded-full backdrop-blur-lg bg-white/10 shadow-lg flex items-center justify-between"
         >
           {/* Left: Logo + Brand */}
