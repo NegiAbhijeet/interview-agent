@@ -1,10 +1,47 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Target, Rocket, Users, Search, Lightbulb, TrendingUp, ArrowRight, Sparkles } from "lucide-react"
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 export default function CategorySection() {
+    const sectionRef = useRef(null);
+    const headingRef = useRef(null);
+    const paragraphRef = useRef(null);
+    const cardRefs = useRef([]);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 50%",
+                },
+            });
+
+            tl.from([headingRef.current, paragraphRef.current], {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+            });
+
+            tl.from(cardRefs.current, {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+            }, "+=0.2");
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
     return (
-        <section className="min-h-screen w-full py-20  relative overflow-hidden">
+        <section className="min-h-screen w-full py-20  relative overflow-hidden" ref={sectionRef}>
             <div className=" mx-auto relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -14,11 +51,13 @@ export default function CategorySection() {
                     </div>
 
                     <h2
+                        ref={headingRef}
                         className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                     >
                         Perfect Match for Everyone
                     </h2>
                     <p
+                        ref={paragraphRef}
                         className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                     >
                         Whether you're hiring or job hunting, we've got the tools to make it seamless
@@ -36,7 +75,7 @@ export default function CategorySection() {
                             zIndex: "-1",
                         }}
                     />
-                    <div className="spectacledcoder-gradient-card">
+                    <div className="spectacledcoder-gradient-card" ref={(el) => (cardRefs.current[0] = el)}>
                         <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
 
                             <CardHeader className="relative z-10 py-6 px-6">
@@ -98,7 +137,7 @@ export default function CategorySection() {
                             </CardContent>
                         </Card>
                     </div>
-                    <div className="spectacledcoder-gradient-card">
+                    <div className="spectacledcoder-gradient-card" ref={(el) => (cardRefs.current[1] = el)}>
                         {/* Right Column - For Candidates */}
                         <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
                             <CardHeader className="relative z-10 py-6 px-6">
