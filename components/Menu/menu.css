@@ -1,0 +1,43 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.menu-overlay {
+  background-color: #111;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  transform: translateZ(0); /* GPU acceleration */
+}
+
+.menu-link-item-holder {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 1rem 0;
+  will-change: transform, opacity;
+  transform: translateY(75px);
+  opacity: 0;
+}
+.menu-overlay {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.5s ease-in-out;
+}
+
+.menu-link-item {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
