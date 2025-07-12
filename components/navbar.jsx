@@ -3,8 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import FilledButtonWrapper from "./filledButtonWrapper"
-import OutlineButtonWrapper from "./OutlineButtonWrapper"
-
+import OutlineLinkWrapper from "./OurlineLinkWrapper"
 export function Navbar() {
   return (
     <header className="fixed top-6 w-full z-50" data-aos="fade-down"
@@ -32,13 +31,13 @@ export function Navbar() {
           {/* Right: Login Button */}
           <div className="flex items-center gap-4">
 
-
             <FilledButtonWrapper>
               Dashboard
             </FilledButtonWrapper>
-            <OutlineButtonWrapper>
+            <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
               Get Demo
-            </OutlineButtonWrapper>
+            </OutlineLinkWrapper>
+
           </div>
         </div>
       </section>
