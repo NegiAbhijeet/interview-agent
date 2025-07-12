@@ -3,7 +3,7 @@ import { CheckCircle, Users, Zap, LineChart } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import CtaSection from "@/components/ctaSection";
-
+import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection"
 const features = [
     {
         title: "Corporate Recruiters",
@@ -29,7 +29,7 @@ const features = [
 
 const page = () => {
     return (
-        <section className="relative overflow-hidden text-white"><div className="pt-[10%]">
+        <section className="relative overflow-hidden text-white">
             <LayoutWrapper>
                 <section className="w-full ">
                     <div className="container px-4 md:px-6">
@@ -48,7 +48,7 @@ const page = () => {
             <LayoutWrapper>
                 {/* Mission Section */}
                 <section className="w-full ">
-                    <div className="container px-4 md:px-6">
+                    <div className="mx-auto">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                             <div className="space-y-4">
 
@@ -63,7 +63,7 @@ const page = () => {
                                 </p>
 
                             </div>
-                            <div className="flex items-center justify-center">
+                            <div className="flex items-center justify-end">
                                 <div className="relative w-full max-w-[550px]">
                                     <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-indigo-600 to-teal-500 opacity-20 blur-xl"></div>
                                     <img
@@ -78,10 +78,11 @@ const page = () => {
                         </div>
                     </div>
                 </section>
-            </LayoutWrapper><LayoutWrapper>
+            </LayoutWrapper>
+            <LayoutWrapper>
                 {/* Who We Serve Section */}
                 <section className="w-full ">
-                    <div className="container px-4 md:px-6">
+                    <div className="">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">
@@ -100,7 +101,7 @@ const page = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="mx-auto grid max-w-6xl grid-cols-1 mt-12 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
+                        <div className="mx-auto grid grid-cols-1 mt-12 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
                             {/* Background Blur */}
                             <div
                                 className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
@@ -140,106 +141,13 @@ const page = () => {
 
                     </div>
                 </section>
-            </LayoutWrapper><LayoutWrapper>
-                {/* Features Section */}
-                <section className="w-full ">
-                    <div className="container px-4 md:px-6">
-                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className="space-y-2">
-                                <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">
-                                    Key Features
-                                </div>
-                                <h2
-                                    className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
-                                >
-                                    Designed for Success
-                                </h2>
-                                <p
-                                    className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                                >
-                                    Our platform combines powerful features with intuitive design to make interview preparation and conducting interviews effortless.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
-                            <div className="flex flex-col gap-4">
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">AI-Powered Mock Interviews</h3>
-                                        <p className="text-gray-600">
-                                            Simulate real interview scenarios with AI-driven feedback to improve your performance.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">Real-Time Feedback</h3>
-                                        <p className="text-gray-600">
-                                            Receive instant feedback on your answers to refine your responses and boost your confidence.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">Scheduling Tools</h3>
-                                        <p className="text-gray-600">
-                                            Easily schedule interviews with integrated calendar tools and automated reminders.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex flex-col gap-4">
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">Video Conferencing</h3>
-                                        <p className="text-gray-600">
-                                            Conduct interviews seamlessly with built-in video conferencing capabilities.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">Performance Analytics</h3>
-                                        <p className="text-gray-600">
-                                            Track your progress and performance with detailed analytics and reports.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-4">
-                                    <div className="rounded-full bg-gradient-to-r from-indigo-600/20 to-teal-500/20 p-2">
-                                        <CheckCircle className="h-6 w-6 text-indigo-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold">Export Report</h3>
-                                        <p className="text-gray-600">
-                                            Export the complete interview report in PDF format for easy sharing, review, or record keeping.                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </LayoutWrapper>
+            {/* Features Section */}
+            <AboutFeatureCardsSection />
 
             <LayoutWrapper>
                 <CtaSection />
             </LayoutWrapper>
-        </div>
         </section>
     )
 }

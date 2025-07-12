@@ -26,7 +26,7 @@ export function Navbar() {
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
             <Link href="/pricing" className="hover:text-white/80 transition">Pricing</Link>
             <Link href="/about" className="hover:text-white/80 transition">About</Link>
-            <Link href="#" className="hover:text-white/80 transition">Contact</Link>
+            <Link href="contact" className="hover:text-white/80 transition">Contact</Link>
           </nav>
 
           {/* Right: Login Button */}
