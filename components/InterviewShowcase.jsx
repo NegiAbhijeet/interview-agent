@@ -142,7 +142,7 @@ const InterviewShowcase = () => {
         </div>
 
         {/* Main image */}
-        <img src="/graphic-image.png" alt="Interview" className="w-[80%] rounded-xl shadow-2xl -z-1" />
+        <img src="/graphic-image.jpeg" alt="Interview" className="w-[80%] rounded-xl shadow-2xl -z-1" />
       </div>
     </LayoutWrapper>
   );
