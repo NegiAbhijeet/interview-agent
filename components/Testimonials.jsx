@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { LayoutWrapper } from "./layout-wrapper";
+import HeadingWrapper from "./headingWrapper";
+import { ShieldCheck } from "lucide-react";
 
 const testimonials = [
     {
@@ -53,12 +55,8 @@ export default function Testimonials() {
                 {/* Gradient Background Bar */}
                 <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
                     <div className="space-y-2">
-                        <div
-                            data-aos="fade-up"
-                            className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
-                        >
-                            Trusted by leading HR teams
-                        </div>
+                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading HR teams" />
+
                         <h2
                             ref={headingRef}
                             data-aos="fade-up"

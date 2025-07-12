@@ -11,7 +11,9 @@ import {
   Edit3,
   Clock,
   MessageSquare,
+  Settings,
 } from "lucide-react";
+import HeadingWrapper from "./headingWrapper";
 
 const features = [
   {
@@ -46,14 +48,8 @@ const FeatureSection = () => {
       <div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div
-              className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
-              data-aos="fade-up"
-              data-aos-delay="0"
-              data-aos-duration="600"
-            >
-              Features
-            </div>
+            <HeadingWrapper icon={Settings} text="Features" />
+
 
             <h2
               className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"

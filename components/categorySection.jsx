@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import HeadingWrapper from "@/components/headingWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
     Target, Rocket, Users, Search, Lightbulb, TrendingUp, Sparkles,
@@ -80,16 +80,7 @@ export default function CategorySection() {
                 <div className="mx-auto relative z-10">
                     {/* Section Header */}
                     <div className="text-center mb-16">
-                        <div
-                            className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
-                            data-aos="fade-up"
-                            data-aos-delay="0"
-                        >
-                            <div className="flex items-center gap-3">
-                                <Sparkles className="h-4 w-4 text-blue-500" />
-                                <span className="text-sm font-medium text-blue-500">Dual Solutions</span>
-                            </div>
-                        </div>
+                        <HeadingWrapper icon={Sparkles} text="Dual Solutions" />
 
                         <h2
                             ref={headingRef}

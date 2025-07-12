@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import CtaSection from "@/components/ctaSection";
 import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection"
+import HeadingWrapper from "@/components/headingWrapper";
 const features = [
     {
         title: "Corporate Recruiters",
@@ -85,9 +86,8 @@ const page = () => {
                     <div className="">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
-                                <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">
-                                    Who We Serve
-                                </div>
+                                <HeadingWrapper icon={Users} text="Who We Serve" />
+
                                 <h2
                                     className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                                 >

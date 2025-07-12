@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Sparkles } from "lucide-react";
+import { CheckCircle, Puzzle } from "lucide-react";
 import { LayoutWrapper } from "./layout-wrapper"; // adjust if needed
+import HeadingWrapper from "./headingWrapper";
 
 export default function FeatureSectionStyled() {
     const features = [
@@ -54,15 +55,8 @@ export default function FeatureSectionStyled() {
                 <div className="mx-auto relative z-10">
                     {/* Header */}
                     <div className="text-center mb-16">
-                        <div
-                            className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
-                            data-aos="fade-up"
-                        >
-                            <div className="flex items-center gap-3 justify-center">
-                                <Sparkles className="h-4 w-4 text-blue-500" />
-                                <span className="text-sm font-medium text-blue-500">Key Features</span>
-                            </div>
-                        </div>
+                        <HeadingWrapper icon={Puzzle} text="Core Capabilities" />
+
                         <h2
                             className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                             data-aos="fade-up"
