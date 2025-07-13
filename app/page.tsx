@@ -53,7 +53,7 @@ export default function Page() {
               data-aos-delay="1200"
               data-aos-duration="600"
             >
-              <OutlineButtonWrapper>Get Demo</OutlineButtonWrapper>
+              <OutlineButtonWrapper>Get a demo</OutlineButtonWrapper>
             </div>
           </div>
 

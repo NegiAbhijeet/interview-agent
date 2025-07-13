@@ -14,18 +14,18 @@ const Footer = () => {
                         </span>
                     </Link>
                     <p className="mt-4 text-gray-300">
-                        Empowering Job Seekers and HR Agencies with AI-driven interview preparation and seamless interview experiences.
+                        Empowering Job Seekers and Recruiters with AI-driven interview preparation and seamless interview experiences.
                     </p>
 
                     {/* Social Media Links */}
                     <div className="flex space-x-4 mt-6">
-                        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
+                        <a href="https://x.com/AinterviewAgent" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
                             <FaTwitter size={20} />
                         </a>
-                        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
+                        <a href="https://www.instagram.com/aiinterviewagents?igsh=ZXQwa2FtdmEwbWZn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
                             <FaInstagram size={20} />
                         </a>
-                        <a href="https://linkedin.com/company/yourhandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-700">
+                        <a href="https://www.linkedin.com/company/ai-interview-agent/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company%3BJqRT4fS%2BROSIU6vuVd6WCQ%3D%3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-700">
                             <FaLinkedin size={20} />
                         </a>
                     </div>

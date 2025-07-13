@@ -18,7 +18,7 @@ const testimonials = [
         role: "Recruitment Operations Manager, StellarWorks",
         image: "https://randomuser.me/api/portraits/men/75.jpg",
         quote:
-            "The scorecards arrive in minutes and bias is gone. Hiring managers trust the data.",
+            "Interview insights are instant, and we’ve eliminated subjective bias. It’s a game-changer for our team.",
     },
     {
         name: "Alex Garcia",
@@ -55,7 +55,7 @@ export default function Testimonials() {
                 {/* Gradient Background Bar */}
                 <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
                     <div className="space-y-2">
-                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading HR teams" />
+                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading recruiters" />
 
                         <h2
                             ref={headingRef}
@@ -70,7 +70,7 @@ export default function Testimonials() {
                             data-aos-delay="100"
                             className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                         >
-                            Real stories from Recruiters, Agencies, and Candidates.
+                            Real stories from Recruiters and Candidates.
                         </p>
                     </div>
                 </div>

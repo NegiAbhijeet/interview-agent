@@ -40,7 +40,8 @@ const page = () => {
                                     About <span className="text-white">NOVA</span>
                                 </h1>
                                 <p className="mx-auto max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    We remove manual work from hiring and give candidates a fair chance to shine. The platform asks scripted questions, scores every answer, and sends a clear transcript within minutes. HR teams hire faster, decisions rely on data, and candidates learn from instant feedback.                </p>
+                                    Nova removes manual work from hiring and gives candidates a fair chance to shine. The platform asks scripted questions, scores every answer, and delivers a clear transcript within minutes. Hiring becomes faster, decisions are data-driven, and candidates benefit from instant feedback.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +61,7 @@ const page = () => {
                                     Revolutionizing Interview Preparation
                                 </h2>
                                 <p className="text-gray-300 md:text-xl/relaxed">
-                                    Redefine first-round screening and preparation. We equip HR teams and agencies with objective, rapid assessments while giving every candidate the tools to improve.
+                                    Redefine first-round screening and preparation. Nova equips recruiters with objective, rapid assessments while giving every candidate the tools to improve.
                                 </p>
 
                             </div>
@@ -91,7 +92,7 @@ const page = () => {
                                 <h2
                                     className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                                 >
-                                    Built for Recruiters, HR Teams, and Agencies
+                                    Built for Recruiters.
                                 </h2>
                                 <p
                                     className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"

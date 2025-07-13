@@ -66,7 +66,7 @@ const FeatureSection = () => {
               data-aos-delay="400"
               data-aos-duration="600"
             >
-              One platform for Recruiters, HR Agencies, and Motivated Candidates.
+              One platform for Recruiters and Job Seekers.
             </p>
           </div>
         </div>

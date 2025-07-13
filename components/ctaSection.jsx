@@ -71,7 +71,7 @@ const CtaSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2>
           <p className="text-lg text-white/80">Questions? Curious? Connect with us.</p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <OutlineButtonWrapper>Get Demo</OutlineButtonWrapper>
+            <OutlineButtonWrapper>Get a demo</OutlineButtonWrapper>
             <FilledButtonWrapper>▶ View 5 min demo</FilledButtonWrapper>
           </div>
         </div>

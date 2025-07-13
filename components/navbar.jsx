@@ -23,8 +23,8 @@ export function Navbar() {
           {/* Center: Nav Links */}
           <nav className="hidden md:flex space-x-6 text-sm font-semibold gap-6">
             <Link href="/" className="hover:text-white/80 transition">Home</Link>
-            <Link href="/pricing" className="hover:text-white/80 transition">Pricing</Link>
             <Link href="/about" className="hover:text-white/80 transition">About</Link>
+            <Link href="/pricing" className="hover:text-white/80 transition">Pricing</Link>
             <Link href="contact" className="hover:text-white/80 transition">Contact</Link>
           </nav>
 
@@ -35,7 +35,7 @@ export function Navbar() {
               Dashboard
             </FilledButtonWrapper>
             <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
-              Get Demo
+              Get a demo
             </OutlineLinkWrapper>
 
           </div>
