@@ -107,7 +107,7 @@ const page = () => {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
                 <div
-                  className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
+                  className="inline-block px-6 py-2 rounded-full bg-purple-100 text-sm text-purple-600"
                   data-aos="fade-up"
                   data-aos-delay="0"
                   data-aos-duration="600"
