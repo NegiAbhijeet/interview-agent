@@ -34,9 +34,9 @@ export function Navbar() {
             <FilledButtonWrapper>
               Login
             </FilledButtonWrapper>
-            <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
+            {/* <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
               Get a Demo
-            </OutlineLinkWrapper>
+            </OutlineLinkWrapper> */}
 
           </div>
         </div>

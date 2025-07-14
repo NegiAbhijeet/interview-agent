@@ -70,7 +70,7 @@ export default function Testimonials() {
                             data-aos-delay="100"
                             className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                         >
-                            Don't get left behind : Real stories prove AI Interview Agent is the secret you're missing!
+                            Real stories prove AI Interview Agent is the secret you're missing!
                         </p>
                     </div>
                 </div>

@@ -40,6 +40,27 @@ const personalPlans = [
         borderColor: "border-blue-200",
         buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
     },
+    {
+        name: "Starter",
+        price: "$20",
+        period: "/month",
+        description: "Ideal for growing businesses and teams",
+        icon: <Zap className="w-6 h-6" />,
+        features: [
+            "Unlimited projects",
+            "100GB storage",
+            "Priority support",
+            "Premium templates",
+            "Advanced analytics",
+            "Team collaboration",
+            "API access",
+        ],
+        buttonText: "Start Free Trial",
+        popular: true,
+        gradient: "from-blue-50 to-blue-100",
+        borderColor: "border-blue-200",
+        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
+    },
 ]
 
 const businessPlans = [
@@ -89,6 +110,27 @@ const businessPlans = [
         buttonStyle:
             "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white",
     },
+    {
+        name: "Starter",
+        price: "$20",
+        period: "/month",
+        description: "Ideal for growing businesses and teams",
+        icon: <Zap className="w-6 h-6" />,
+        features: [
+            "Unlimited projects",
+            "100GB storage",
+            "Priority support",
+            "Premium templates",
+            "Advanced analytics",
+            "Team collaboration",
+            "API access",
+        ],
+        buttonText: "Start Free Trial",
+        popular: true,
+        gradient: "from-blue-50 to-blue-100",
+        borderColor: "border-blue-200",
+        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
+    },
 ]
 
 export default function PricingPlans() {
@@ -104,8 +146,8 @@ export default function PricingPlans() {
                         <button
                             onClick={() => setPlanType("personal")}
                             className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "personal"
-                                    ? "bg-black text-white"
-                                    : "bg-transparent text-gray-700 hover:bg-gray-200"
+                                ? "bg-[#050d1a] text-white"
+                                : "bg-transparent text-gray-700 hover:bg-gray-200"
                                 }`}
                         >
                             Personal
@@ -113,20 +155,30 @@ export default function PricingPlans() {
                         <button
                             onClick={() => setPlanType("business")}
                             className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "business"
-                                    ? "bg-black text-white"
-                                    : "bg-transparent text-gray-700 hover:bg-gray-200"
+                                ? "bg-black text-white"
+                                : "bg-transparent text-gray-700 hover:bg-gray-200"
                                 }`}
                         >
                             Business
                         </button>
                     </div>
 
+                    <div className="w-full text-center my-4">
+                        <p className="text-gray-300 text-xl">
+                            {
+                                planType === "personal" ? "Boost confidence with 15 free practice minutes every day. Upgrade for unlimited access."
+                                    :
+                                    "4 x 15-minute free trials to get started. Beyond that, tailored plans are available."
+                            }
+                        </p>
+                    </div>
+
 
                     {/* Pricing Cards */}
-                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-stretch mt-12">
-                        {plans.map((plan) => (
+                    <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch mt-12">
+                        {plans.map((plan, index) => (
                             <div
-                                key={plan.name}
+                                key={index}
                                 className={`relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col h-full ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
                                     } ${plan.popular ? "ring-blue-500" : plan.recommended ? "ring-purple-500" : ""}`}
                             >
@@ -180,8 +232,8 @@ export default function PricingPlans() {
 
                     {/* Bottom Section */}
                     <div className="text-center mt-16">
-                        <p className="text-gray-600 mb-6">All plans include a 14-day free trial. No credit card required.</p>
-                        <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-500">
+                        <p className="text-gray-300 mb-6">All plans include a 14-day free trial. No credit card required.</p>
+                        <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-400">
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
                                 Cancel anytime
@@ -190,10 +242,10 @@ export default function PricingPlans() {
                                 <Check className="w-4 h-4 text-green-600" />
                                 24/7 support
                             </div>
-                            <div className="flex items-center gap-2">
+                            {/* <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
                                 99.9% uptime
-                            </div>
+                            </div> */}
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
                                 Money-back guarantee

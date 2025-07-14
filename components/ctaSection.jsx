@@ -7,6 +7,7 @@ import FilledButtonWrapper from './filledButtonWrapper';
 import OutlineButtonWrapper from "./OutlineButtonWrapper";
 import { LayoutWrapper } from './layout-wrapper';
 import { Lightbulb } from 'lucide-react';
+import OutlineLinkWrapper from './OutlineLinkWrapper';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
@@ -72,7 +73,9 @@ const CtaSection = () => {
           {/* <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2> */}
           <p className="text-lg text-white/80 flex items-center justify-center"><span>Still Hiring the Old Way? You're Missing Out.&nbsp;</span><Lightbulb className='text-yellow-400' /></p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <OutlineButtonWrapper>Get a Demo</OutlineButtonWrapper>
+            <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
+              Get a Demo
+            </OutlineLinkWrapper>
             <FilledButtonWrapper>▶ View 5 min demo</FilledButtonWrapper>
           </div>
         </div>

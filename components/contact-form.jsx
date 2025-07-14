@@ -33,7 +33,7 @@ const ContactForm = ({ heading, description }) => {
                                         <h3 className="text-lg font-semibold">Email Us</h3>
                                         <p className="text-gray-300">
                                             <a href="mailto:support@collabai.com" className="hover:text-indigo-600">
-                                                support@intervueai.com
+                                                contact@auring.in
                                             </a>
                                         </p>
                                     </div>
@@ -58,9 +58,9 @@ const ContactForm = ({ heading, description }) => {
                                     <div>
                                         <h3 className="text-lg font-semibold">Visit Us</h3>
                                         <p className="text-gray-300">
-                                            123 Innovation Way
+                                            414,Vipul Business Park
                                             <br />
-                                            San Francisco, CA 94107
+                                            Sector-48,Sohan Road, Gurugram
                                         </p>
                                     </div>
                                 </div>

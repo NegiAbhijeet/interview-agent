@@ -6,48 +6,61 @@ import HeadingWrapper from "./headingWrapper";
 export default function FeatureSectionStyled() {
     const features = [
         {
-            type: "Interviewees",
+            type: "Candidates",
             icon: <CheckCircle className="h-7 w-7 text-blue-400" />,
             badgeColor: "blue",
-            title: "Tools built to help you succeed.",
-            description: "Optimize your prep with personalized, data-driven insights.",
+            title: "Master Your Moment. Own Your Future.",
+            description: "Are you truly ready? Or will you miss out?",
             items: [
                 {
                     icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
-                    title: "AI-Powered Mock Interviews",
-                    desc: "Simulate real interview scenarios with intelligent feedback.",
+                    title: "Practice Daily, For Free",
+                    desc: "Dive into unlimited AI mock interviews to sharpen your skills.",
                     color: "indigo",
                 },
                 {
                     icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
-                    title: "Real-Time Feedback",
-                    desc: "Instant response analysis to improve performance on the fly.",
+                    title: "Transform Weaknesses",
+                    desc: "Get instant feedback to convert weak spots into undeniable strengths.",
                     color: "teal",
+                },
+                {
+                    icon: <CheckCircle className="h-5 w-5 text-emerald-400" />,
+                    title: "Unshakeable Confidence",
+                    desc: "Walk into every interview not just ready, but unstoppable.",
+                    color: "emerald",
                 },
             ],
         },
         {
-            type: "Interviewers",
+            type: "Recruiters",
             icon: <CheckCircle className="h-7 w-7 text-purple-400" />,
             badgeColor: "purple",
-            title: "Streamline your interviewing process.",
-            description: "Make interviewing faster and more insightful with built-in tools.",
+            title: "Stop Guessing. Start Winning.",
+            description: "Unlock a new era of hiring. Don't get left behind.",
             items: [
                 {
                     icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
-                    title: "Video Conferencing",
-                    desc: "Built-in conferencing to host seamless remote interviews.",
+                    title: "Intelligent Screening",
+                    desc: "Our AI screens candidates with unparalleled accuracy.",
                     color: "indigo",
                 },
                 {
                     icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
-                    title: "Performance Analytics",
-                    desc: "Detailed analytics for better post-interview evaluations.",
+                    title: "Data-Rich Decisions",
+                    desc: "Get bias-free reports and crystal-clear insights for confident wins.",
                     color: "teal",
+                },
+                {
+                    icon: <CheckCircle className="h-5 w-5 text-emerald-400" />,
+                    title: "Eliminate Bias",
+                    desc: "Secure the best fit, every time.",
+                    color: "emerald",
                 },
             ],
         },
     ];
+
 
     return (
         <LayoutWrapper>
@@ -55,24 +68,25 @@ export default function FeatureSectionStyled() {
                 <div className="mx-auto relative z-10">
                     {/* Header */}
                     <div className="text-center mb-16">
-                        <HeadingWrapper icon={Puzzle} text="Core Capabilities" />
+                        <HeadingWrapper icon={Puzzle} text="Your Unfair Advantage." />
 
                         <h2
                             className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
-                            Designed for Success
+                            Don't Just Compete, Dominate.
                         </h2>
                         <p
                             className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                             data-aos="fade-up"
                             data-aos-delay="400"
                         >
-                            Our platform blends powerful features with intuitive design to help both interviewers and interviewees excel.
-                        </p>
+                            Our platform gives you the unfair advantage. Powerful AI meets intuitive
+                            design to transform your interview game, whether you're hiring or getting
+                            hired.                        </p>
                     </div>
-                    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 max-w-7xl mx-auto relative">
+                    <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
                         <div
                             className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
                             style={{

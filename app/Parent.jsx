@@ -5,7 +5,7 @@ const Parent = ({ children }) => {
     return (
         <div>
             <Navbar />
-            <Menu />
+            {/* <Menu /> */}
             {children}
             <Footer />
         </div>

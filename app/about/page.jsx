@@ -5,28 +5,61 @@ import { LayoutWrapper } from "@/components/layout-wrapper";
 import CtaSection from "@/components/ctaSection";
 import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection"
 import HeadingWrapper from "@/components/headingWrapper";
+import AdvantageSection from "@/components/advantageSection"
 const features = [
     {
-        title: "Corporate Recruiters",
-        description: "Slash screening time and deliver short lists in hours.",
-        icon: Users,
+        type: "Job Seekers",
+        icon: <CheckCircle className="h-7 w-7 text-blue-400" />,
+        badgeColor: "blue",
+        items: [
+            {
+                icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
+                title: "Your Next Opportunity Awaits",
+                desc: "This is your moment to master every interview.",
+                color: "indigo",
+            },
+            {
+                icon: <CheckCircle className="h-5 w-5 text-orange-400" />,
+                title: "Practice for Perfection",
+                desc: "Get instant AI feedback daily to pinpoint weaknesses and build unshakeable confidence.",
+                color: "indigo",
+            },
+            {
+                icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
+                title: "Be Unignorable",
+                desc: "Stop guessing and start excelling to secure your dream job or internship.",
+                color: "teal",
+            },
+        ],
     },
     {
-        title: "HR Specialists",
-        description: "Run consistent, compliant interviews and keep every record in one place.",
-        icon: Zap,
-    },
-    {
-        title: "Recruitment Agencies",
-        description: "Handle hundreds of interviews at once and send branded, data-rich reports to clients.",
-        icon: CheckCircle,
-    },
-    {
-        title: "Candidates",
-        description: "Practice daily, get feedback, and walk into real interviews with confidence.",
-        icon: LineChart,
+        type: "Recruiting Teams",
+        icon: <CheckCircle className="h-7 w-7 text-purple-400" />,
+        badgeColor: "purple",
+        items: [
+            {
+                icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
+                title: "Stop Wasting Time: Start Winning Talent",
+                desc: "Revolutionize hiring by eliminating busywork, bias, and endless hours.",
+                color: "indigo",
+            },
+            {
+                icon: <CheckCircle className="h-5 w-5 text-orange-400" />,
+                title: "Strategic Advantage",
+                desc: "Slash screening time, gain crystal-clear data, and handle hundreds & thousands of interviews with unprecedented speed.",
+                color: "indigo",
+            },
+            {
+                icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
+                title: "Don't Get Left Behind",
+                desc: "Access the insights and efficiency top teams are already leveraging.",
+                color: "teal",
+            },
+        ],
     },
 ];
+
+
 
 const page = () => {
     return (
@@ -40,15 +73,20 @@ const page = () => {
                                     data-aos="fade-up"
                                     data-aos-delay="0"
                                     data-aos-duration="600">
-                                    About <span className="text-white">NOVA</span>
+                                    About AI Interview Agent
                                 </h1>
                                 <p
                                     data-aos="fade-up"
                                     data-aos-delay="200"
-                                    data-aos-duration="600" 
+                                    data-aos-duration="600"
                                     className="mx-auto max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    Nova removes manual work from hiring and gives candidates a fair chance to shine. The platform asks scripted questions, scores every answer, and delivers a clear transcript within minutes. Hiring becomes faster, decisions are data-driven, and candidates benefit from instant feedback.
-                                </p>
+                                    Nova revolutionizes first-round interviews by eliminating manual screening
+                                    and unconscious bias. Our intelligent agent(Nova) asks scripted questions,
+                                    precisely scores every response, and delivers clear, actionable reports
+                                    within minutes. This means recruiters can hire faster with data-backed
+                                    decisions, while job seekers can practice daily for free to sharpen their
+                                    skills and boost their confidence. It's the future of talent acquisition,
+                                    simplified.                                </p>
                             </div>
                         </div>
                     </div>
@@ -79,8 +117,12 @@ const page = () => {
                                     data-aos-delay="400"
                                     data-aos-duration="600"
                                     className="text-gray-300 md:text-xl/relaxed">
-                                    Redefine first-round screening and preparation. Nova equips recruiters with objective, rapid assessments while giving every candidate the tools to improve.
-                                </p>
+                                    We're revolutionizing talent discovery and preparation. Our vision is to
+                                    redefine first-round interviews, creating a seamless and equitable
+                                    experience. We empower recruiting teams with rapid, objective
+                                    assessments for data-driven hires, while equipping job seekers with tools
+                                    to master interviews and confidently seize their future. This is building a
+                                    smarter, fairer future for talent worldwide.                                </p>
 
                             </div>
                             <div className="flex items-center justify-end">
@@ -103,7 +145,7 @@ const page = () => {
                 {/* Who We Serve Section */}
                 <section className="w-full ">
                     <div className="">
-                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
                             <div className="space-y-2">
                                 <HeadingWrapper icon={Users} text="Who We Serve" />
 
@@ -113,7 +155,7 @@ const page = () => {
                                     data-aos-duration="600"
                                     className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                                 >
-                                    Built for Recruiters.
+                                    Your Edge in Talent.
                                 </h2>
                                 <p
                                     data-aos="fade-up"
@@ -121,50 +163,69 @@ const page = () => {
                                     data-aos-duration="600"
                                     className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                                 >
-                                    AI Interview Agent removes busywork and bias from early interviews, so hiring moves faster and decisions rest on clear data.
-
+                                    Unlock Unprecedented Efficiency & Opportunity.
                                 </p>
                             </div>
                         </div>
-                        <div className="mx-auto grid grid-cols-1 mt-12 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
-                            {/* Background Blur */}
-                            <div
-                                className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
-                                style={{
-                                    top: "50%",
-                                    left: "50%",
-                                    transform: "translate(-50%, -50%)",
-                                    zIndex: "-1",
-                                }}
-                            />
-
-                            {features.map((feature, index) => {
-                                const Icon = feature.icon;
-                                return (
-                                    <div key={index} className="spectacledcoder-gradient-card"
-                                        data-aos="fade-up"
-                                        data-aos-delay={`${600 + index * 100}`} // staggered delay
-                                        data-aos-duration="600"
-                                    >
-                                        <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                                            <CardHeader className="pb-2">
-                                                <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                                                    <Icon className="h-6 w-6 text-purple-600" />
+                        <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
+                        <div
+                            className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
+                            style={{
+                                top: "50%",
+                                left: "50%",
+                                transform: "translate(-50%, -50%)",
+                                zIndex: "-1",
+                            }}
+                        />
+                            {features.map((section, idx) => (
+                                <div
+                                    key={idx}
+                                    className="spectacledcoder-gradient-card w-full"
+                                    data-aos="fade-up"
+                                    data-aos-delay={600 + idx * 200}
+                                >
+                                    <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
+                                        <CardHeader className="relative z-10 py-6 px-6">
+                                            <div className="flex items-center gap-4 mb-4">
+                                                <div className={`p-3 rounded-xl bg-gradient-to-br from-${section.badgeColor}-500/20 to-${section.badgeColor}-500/20 border border-${section.badgeColor}-500/30`}>
+                                                    {section.icon}
                                                 </div>
-                                                <CardTitle className="text-xl font-bold text-gray-200">
-                                                    {feature.title}
-                                                </CardTitle>
-                                            </CardHeader>
-                                            <CardContent>
-                                                <CardDescription className="text-gray-300">
-                                                    {feature.description}
-                                                </CardDescription>
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-                                );
-                            })}
+                                                <div>
+                                                    <span className={`text-sm font-semibold text-${section.badgeColor}-400 uppercase tracking-wider block`}>
+                                                        For {section.type}
+                                                    </span>
+                                                    <div className={`w-12 h-0.5 bg-gradient-to-r from-${section.badgeColor}-500 to-${section.badgeColor}-500 mt-1`} />
+                                                </div>
+                                            </div>
+                                           
+                                        </CardHeader>
+
+                                        <CardContent className="relative z-10 space-y-4 pb-4">
+                                            <div className="space-y-2">
+                                                {section.items.map((item, itemIdx) => (
+                                                    <div
+                                                        key={itemIdx}
+                                                        className="flex items-start gap-5 group/item p-4 rounded-xl hover:bg-slate-800/50 transition-all duration-300 hover:translate-x-2"
+
+                                                    >
+                                                        <div className={`p-2.5 rounded-lg bg-gradient-to-br from-${item.color}-500/20 to-${item.color}-500/20 border border-${item.color}-500/30 mt-1`}>
+                                                            {item.icon}
+                                                        </div>
+                                                        <div>
+                                                            <p className="text-white font-semibold text-base leading-relaxed mb-1">
+                                                                {item.title}
+                                                            </p>
+                                                            <p className="text-slate-400 text-sm">{item.desc}</p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            ))}
                         </div>
+
 
 
 
@@ -173,6 +234,7 @@ const page = () => {
             </LayoutWrapper>
             {/* Features Section */}
             <AboutFeatureCardsSection />
+            <AdvantageSection />
 
             <LayoutWrapper>
                 <CtaSection />
