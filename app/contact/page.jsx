@@ -10,10 +10,17 @@ const page = () => {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                >
                   Get in touch with our Hiring Experts.
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p 
+                data-aos="fade-up"
+                data-aos-delay="200" 
+                data-aos-duration="600"
+                className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Questions on pricing, security, or setup? We reply within one business day.
                 </p>
               </div>

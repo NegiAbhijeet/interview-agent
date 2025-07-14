@@ -50,7 +50,6 @@ const FeatureSection = () => {
           <div className="space-y-2">
             <HeadingWrapper icon={Settings} text="Features" />
 
-
             <h2
               className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
               data-aos="fade-up"

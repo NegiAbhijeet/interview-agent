@@ -36,10 +36,17 @@ const page = () => {
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-gray-400">
+                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-gray-400"
+                                    data-aos="fade-up"
+                                    data-aos-delay="0"
+                                    data-aos-duration="600">
                                     About <span className="text-white">NOVA</span>
                                 </h1>
-                                <p className="mx-auto max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                <p
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                    data-aos-duration="600" 
+                                    className="mx-auto max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     Nova removes manual work from hiring and gives candidates a fair chance to shine. The platform asks scripted questions, scores every answer, and delivers a clear transcript within minutes. Hiring becomes faster, decisions are data-driven, and candidates benefit from instant feedback.
                                 </p>
                             </div>
@@ -54,13 +61,24 @@ const page = () => {
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                             <div className="space-y-4">
 
-                                <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600">
+                                <div className="inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600"
+                                    data-aos="fade-up"
+                                    data-aos-delay="0"
+                                    data-aos-duration="600">
                                     Our Mission
                                 </div>
-                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                                <h2
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                    data-aos-duration="600"
+                                    className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
                                     Revolutionizing Interview Preparation
                                 </h2>
-                                <p className="text-gray-300 md:text-xl/relaxed">
+                                <p
+                                    data-aos="fade-up"
+                                    data-aos-delay="400"
+                                    data-aos-duration="600"
+                                    className="text-gray-300 md:text-xl/relaxed">
                                     Redefine first-round screening and preparation. Nova equips recruiters with objective, rapid assessments while giving every candidate the tools to improve.
                                 </p>
 
@@ -90,11 +108,17 @@ const page = () => {
                                 <HeadingWrapper icon={Users} text="Who We Serve" />
 
                                 <h2
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                    data-aos-duration="600"
                                     className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
                                 >
                                     Built for Recruiters.
                                 </h2>
                                 <p
+                                    data-aos="fade-up"
+                                    data-aos-delay="400"
+                                    data-aos-duration="600"
                                     className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                                 >
                                     AI Interview Agent removes busywork and bias from early interviews, so hiring moves faster and decisions rest on clear data.
@@ -117,7 +141,11 @@ const page = () => {
                             {features.map((feature, index) => {
                                 const Icon = feature.icon;
                                 return (
-                                    <div key={index} className="spectacledcoder-gradient-card">
+                                    <div key={index} className="spectacledcoder-gradient-card"
+                                        data-aos="fade-up"
+                                        data-aos-delay={`${600 + index * 100}`} // staggered delay
+                                        data-aos-duration="600"
+                                    >
                                         <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
                                             <CardHeader className="pb-2">
                                                 <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
