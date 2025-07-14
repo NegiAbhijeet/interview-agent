@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import FilledButtonWrapper from "./filledButtonWrapper"
-import OutlineLinkWrapper from "./OurlineLinkWrapper"
+import OutlineLinkWrapper from "./OutlineLinkWrapper"
 export function Navbar() {
   return (
     <header className="fixed top-6 w-full z-50" data-aos="fade-down"

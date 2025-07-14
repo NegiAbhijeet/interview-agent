@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const OutlineLinkWrapper = ({ children, className = "", link = "", icon = true, ...props }) => {
     const baseClasses =
-        "relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50 text-white bg-transparent border border-white hover:opacity-90 transition";
+        "relative inline-flex items-center px-12 py-3 overflow-hidden text-base font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50 text-white bg-transparent border border-white hover:opacity-90 transition";
 
     return (
         <a

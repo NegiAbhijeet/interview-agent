@@ -17,7 +17,7 @@ const LaunchToast = () => {
           scale: 1,
           duration: 0.6,
           ease: "power3.out",
-          delay:1
+          delay: 1
         }
       );
     }
@@ -56,12 +56,12 @@ const LaunchToast = () => {
         {/* Header Row */}
         <div className="flex items-center gap-3 mb-2">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <h4 className="text-sm font-semibold">🚀 Launching Soon</h4>
+          <h4 className="text-sm font-semibold">🚀 Launching Soon: Don't Get Left Behind!</h4>
         </div>
 
         {/* Description */}
         <p className="text-xs text-white/80 leading-snug">
-          We’re almost ready to launch. Stay tuned — exciting things are coming your way!
+          The future of interviews is almost here. Get ready — you won't want to miss this!
         </p>
       </div>
     </div>
