@@ -10,7 +10,7 @@ import {
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import CtaSection from "@/components/ctaSection";
 import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection";
-import HeadingWrapper from "@/components/headingWrapper";
+import HeadingComponentWrapper from "@/components/headingComponentWrapper";
 import AdvantageSection from "@/components/advantageSection";
 const features = [
   {
@@ -157,28 +157,12 @@ const page = () => {
         {/* Who We Serve Section */}
         <section className="w-full ">
           <div className="">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <div className="space-y-2">
-                <HeadingWrapper icon={Users} text="Who We Serve" />
-
-                <h2
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="600"
-                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
-                >
-                  Your Edge in Talent.
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  data-aos-duration="600"
-                  className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                >
-                  Unlock Unprecedented Efficiency & Opportunity.
-                </p>
-              </div>
-            </div>
+            <HeadingComponentWrapper
+              icon={Users}
+              first="Who We Serve"
+              second="Your Edge in Talent."
+              third="Unlock Unprecedented Efficiency & Opportunity."
+            />
             <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
               <div
                 className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"

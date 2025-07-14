@@ -1,9 +1,7 @@
-import React, { useEffect, useRef } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import { LayoutWrapper } from "./layout-wrapper";
-import HeadingWrapper from "./headingWrapper";
 import { ShieldCheck } from "lucide-react";
+import HeadingComponentWrapper from "./headingComponentWrapper";
 
 const testimonials = [
     {
@@ -37,43 +35,19 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-    const sectionRef = useRef(null);
-    const headingRef = useRef(null);
-    const paragraphRef = useRef(null);
-    const cardRefs = useRef([]);
-
-    useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
-    }, []);
 
     return (
         <LayoutWrapper>
             <section
                 className="w-full flex flex-col items-center justify-center relative"
-                ref={sectionRef}
             >
                 {/* Gradient Background Bar */}
-                <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                    <div className="space-y-2">
-                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading Recuriters & job seekers" />
-
-                        <h2
-                            ref={headingRef}
-                            data-aos="fade-up"
-                            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-                        >
-                            The Future of Interviews? It's Already Here.
-                        </h2>
-                        <p
-                            ref={paragraphRef}
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                            className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                        >
-                            Real stories prove AI Interview Agent is the secret you're missing!
-                        </p>
-                    </div>
-                </div>
+                <HeadingComponentWrapper
+                    icon={ShieldCheck}
+                    first="Trusted by leading Recuriters & job seekers"
+                    second="The Future of Interviews? It's Already Here."
+                    third="Real stories prove AI Interview Agent is the secret you're missing!"
+                />
                 <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
                         <div
@@ -90,7 +64,6 @@ export default function Testimonials() {
                             <div
                                 key={index}
                                 className="spectacledcoder-gradient-card"
-                                ref={(el) => (cardRefs.current[index] = el)}
                                 data-aos="fade-up"
                                 data-aos-delay={index * 100}
                             >

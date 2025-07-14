@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Puzzle } from "lucide-react";
 import { LayoutWrapper } from "./layout-wrapper"; // adjust if needed
-import HeadingWrapper from "./headingWrapper";
+import HeadingComponentWrapper from "./headingComponentWrapper";
 
 export default function FeatureSectionStyled() {
     const features = [
@@ -67,25 +67,12 @@ export default function FeatureSectionStyled() {
             <section className="min-h-screen w-full py-20 relative overflow-hidden">
                 <div className="mx-auto relative z-10">
                     {/* Header */}
-                    <div className="text-center mb-16">
-                        <HeadingWrapper icon={Puzzle} text="Your Unfair Advantage." />
-
-                        <h2
-                            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            Don't Just Compete, Dominate.
-                        </h2>
-                        <p
-                            className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            Our platform gives you the unfair advantage. Powerful AI meets intuitive
-                            design to transform your interview game, whether you're hiring or getting
-                            hired.                        </p>
-                    </div>
+                    <HeadingComponentWrapper
+    icon={Puzzle}
+    first="Your Unfair Advantage."
+    second="Don't Just Compete, Dominate."
+    third="Our platform gives you the unfair advantage. Powerful AI meets intuitive design to transform your interview game, whether you're hiring or getting hired."
+  />
                     <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
                         <div
                             className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"

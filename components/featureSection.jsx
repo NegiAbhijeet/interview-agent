@@ -13,7 +13,7 @@ import {
   MessageSquare,
   Settings,
 } from "lucide-react";
-import HeadingWrapper from "./headingWrapper";
+import HeadingComponentWrapper from "./headingComponentWrapper";
 
 const features = [
   {
@@ -46,31 +46,14 @@ const FeatureSection = () => {
   return (
     <LayoutWrapper id="learn-more">
       <div>
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <HeadingWrapper icon={Settings} text="Features" />
+        <HeadingComponentWrapper
+          icon={Settings}
+          first="Features"
+          second="Your Complete Hub for Smarter Interviews."
+          third="The unified platform designed for Recruiters, HR Agencies, and Motivated Candidates."
+        />
 
-            <h2
-              className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="600"
-            >
-              Your Complete Hub for Smarter Interviews.
-            </h2>
-
-            <p
-              className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="600"
-            >
-              The unified platform designed for Recruiters, HR Agencies, and Motivated Candidates.
-            </p>
-          </div>
-        </div>
-
-        <div className="mx-auto grid max-w-6xl grid-cols-1 mt-12 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 relative">
           {/* Gradient Background Blur */}
           <div
             className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"

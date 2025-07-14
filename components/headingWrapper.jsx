@@ -3,7 +3,7 @@ import React from 'react'
 const HeadingWrapper = ({ icon: Icon, text, className = '' }) => {
     return (
         <div
-            className={`inline-block px-6 py-2 rounded-full mb-4 bg-purple-100 text-sm text-purple-600 ${className}`}
+            className={`inline-block px-6 py-2 rounded-full bg-purple-100 text-sm text-purple-600 ${className}`}
             data-aos="fade-up"
             data-aos-delay="0"
         >

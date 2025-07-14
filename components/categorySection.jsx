@@ -6,20 +6,11 @@ import {
     Zap,
     AlarmClock,
 } from "lucide-react";
-import { useEffect, useRef } from "react";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LayoutWrapper } from "./layout-wrapper";
+import HeadingComponentWrapper from "./headingComponentWrapper";
 
 export default function CategorySection() {
-    const sectionRef = useRef(null);
-    const headingRef = useRef(null);
-    const paragraphRef = useRef(null);
-
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
-
     const cardData = [
         {
             type: "Empowering Recruiters",
@@ -80,29 +71,15 @@ export default function CategorySection() {
 
     return (
         <LayoutWrapper>
-            <section className="min-h-screen w-full py-20 relative overflow-hidden" ref={sectionRef}>
+            <section className="min-h-screen w-full py-20 relative overflow-hidden">
                 <div className="mx-auto relative z-10">
                     {/* Section Header */}
-                    <div className="text-center mb-16">
-                        <HeadingWrapper icon={Sparkles} text="The Dual Solution You Didn't Know You Needed." />
-
-                        <h2
-                            ref={headingRef}
-                            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            Perfect Match for Everyone
-                        </h2>
-
-                        <p
-                            ref={paragraphRef}
-                            className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            Whether you're shaping a team or crafting your career, dive into the seamless experience our platform offers.                        </p>
-                    </div>
+                    <HeadingComponentWrapper
+                        icon={Sparkles}
+                        first="The Dual Solution You Didn't Know You Needed."
+                        second="Perfect Match for Everyone."
+                        third="Whether you're shaping a team or crafting your career, dive into the seamless experience our platform offers."
+                    />
 
                     <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
                         <div
