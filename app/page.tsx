@@ -1,13 +1,13 @@
-"use client"
-import { LayoutWrapper } from "@/components/layout-wrapper"
-import FilledButtonWrapper from "@/components/filledButtonWrapper"
-import CategorySection from "@/components/categorySection"
-import InterviewShowcase from "@/components/InterviewShowcase"
-import Testimonials from "@/components/Testimonials"
-import CtaSection from "@/components/ctaSection"
-import LaunchToast from "@/components/LaunchToast"
-import OutlineButtonWrapper from "@/components/OutlineButtonWrapper"
-import FeatureSection from "@/components/featureSection"
+"use client";
+import { LayoutWrapper } from "@/components/layout-wrapper";
+import FilledButtonWrapper from "@/components/filledButtonWrapper";
+import CategorySection from "@/components/categorySection";
+import InterviewShowcase from "@/components/InterviewShowcase";
+import Testimonials from "@/components/Testimonials";
+import CtaSection from "@/components/ctaSection";
+import LaunchToast from "@/components/LaunchToast";
+import OutlineButtonWrapper from "@/components/OutlineButtonWrapper";
+import FeatureSection from "@/components/featureSection";
 
 export default function Page() {
   return (
@@ -23,7 +23,9 @@ export default function Page() {
           >
             Meet <span className="text-white font-light">Nova</span>.
             <br />
-            <span className="text-gray-400 font-normal">Your Interview Assistant.</span>
+            <span className="text-gray-400 font-normal">
+              Your Interview Assistant.
+            </span>
           </h1>
 
           <div
@@ -46,7 +48,9 @@ export default function Page() {
               data-aos-delay="900"
               data-aos-duration="600"
             >
-              <FilledButtonWrapper className="bg-yellow-400 text-black hover:bg-yellow-400">Start for free</FilledButtonWrapper>
+              <FilledButtonWrapper className="bg-yellow-400 text-black hover:bg-yellow-400">
+                Start for free
+              </FilledButtonWrapper>
             </div>
             <div
               data-aos="zoom-in-up"
@@ -59,8 +63,16 @@ export default function Page() {
 
           <div
             className="mt-10"
+            data-aos="zoom-in-up"
+            data-aos-delay="1300"
+            data-aos-duration="600"
           >
-            <a href="#learn-more" className="text-gray-500 hover:text-white transition">Learn more ↓</a>
+            <a
+              href="#learn-more"
+              className="text-gray-500 hover:text-white transition"
+            >
+              Learn more ↓
+            </a>
           </div>
         </div>
       </LayoutWrapper>
@@ -74,6 +86,6 @@ export default function Page() {
       <Testimonials />
 
       <CtaSection />
-    </section >
-  )
+    </section>
+  );
 }
