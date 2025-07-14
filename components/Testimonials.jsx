@@ -49,11 +49,11 @@ export default function Testimonials() {
     return (
         <LayoutWrapper>
             <section
-                className="w-full min-h-screen flex flex-col items-center justify-center relative"
+                className="w-full flex flex-col items-center justify-center relative"
                 ref={sectionRef}
             >
                 {/* Gradient Background Bar */}
-                <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
+                <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
                         <HeadingWrapper icon={ShieldCheck} text="Trusted by leading Recuriters & job seekers" />
 

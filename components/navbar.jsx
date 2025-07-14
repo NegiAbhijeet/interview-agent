@@ -6,7 +6,7 @@ import FilledButtonWrapper from "./filledButtonWrapper"
 import OutlineLinkWrapper from "./OutlineLinkWrapper"
 export function Navbar() {
   return (
-    <header className="fixed top-6 w-full z-50" data-aos="fade-down"
+    <header className="fixed top-12 w-full z-50" data-aos="fade-down"
       data-aos-duration="600">
       <section className="w-[90%] max-w-screen-xl mx-auto">
         <div
