@@ -188,7 +188,8 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: black;
+    background: white;
+    
     z-index: -1;
     transition: transform 400ms ease-out;
     transform: scaleX(0);
@@ -200,6 +201,6 @@ html {
 }
 
 .slide-button:hover {
-    color: #fff;
+    color: #000;
 }
 
