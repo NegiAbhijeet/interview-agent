@@ -121,7 +121,7 @@ const ContactForm = ({ heading, description }) => {
               data-aos-duration="600"
               className="spectacledcoder-gradient-card w-full"
             >
-              <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
+              <Card className="spectacledcoder-content-card relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
                 <CardHeader>
                   <CardTitle className="text-white">
                     Questions about AI-powered screening?
@@ -134,7 +134,7 @@ const ContactForm = ({ heading, description }) => {
                 <CardContent>
                   <form className="grid gap-4">
                     <div className="grid gap-2">
-                      <Label htmlFor="name" className="text-white">
+                      <Label htmlFor="name" className="text-white mb-1">
                         Name
                       </Label>
                       <Input
@@ -144,7 +144,7 @@ const ContactForm = ({ heading, description }) => {
                       />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="email" className="text-white">
+                      <Label htmlFor="email" className="text-white mb-1">
                         Email
                       </Label>
                       <Input
@@ -155,7 +155,7 @@ const ContactForm = ({ heading, description }) => {
                       />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="subject" className="text-white">
+                      <Label htmlFor="subject" className="text-white mb-1">
                         Subject
                       </Label>
                       <Input
@@ -164,8 +164,8 @@ const ContactForm = ({ heading, description }) => {
                         className="bg-[#050d1a] px-4 rounded-full border-gray-600 text-white"
                       />
                     </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="message" className="text-white">
+                    <div className="grid gap-2 mb-4">
+                      <Label htmlFor="message" className="text-white mb-1">
                         Message
                       </Label>
                       <Textarea

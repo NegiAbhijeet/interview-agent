@@ -9,6 +9,7 @@ const OutlineButtonWrapper = ({ children, className = "", icon = true, ...props 
     <Button
       className={`${baseClasses} ${className}`}
       {...props}
+      type='button'
     >
       <span className="absolute left-0 block w-full h-0 transition-all bg-black opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
 
