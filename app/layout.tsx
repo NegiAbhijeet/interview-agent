@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-[#050d1a] relative text-white ${plusJakarta.variable} ${dmSerif.variable} ${manrope.variable}`}>
+      <body className={`bg-[#050d1a] pt-[10vh] relative text-white ${plusJakarta.variable} ${dmSerif.variable} ${manrope.variable}`}>
         <AOSInit /> {/* ✅ Initialize AOS here */}
         <div
           style={{ transform: 'translateX(-50%)' }}

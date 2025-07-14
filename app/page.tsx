@@ -5,15 +5,12 @@ import CategorySection from "@/components/categorySection";
 import InterviewShowcase from "@/components/InterviewShowcase";
 import Testimonials from "@/components/Testimonials";
 import CtaSection from "@/components/ctaSection";
-import LaunchToast from "@/components/LaunchToast";
 import OutlineButtonWrapper from "@/components/OutlineButtonWrapper";
 import FeatureSection from "@/components/featureSection";
 
 export default function Page() {
   return (
     <section className="relative overflow-hidden text-white">
-      <LaunchToast />
-
       <div className="text-center min-h-screen z-10 text-white flex flex-col items-center justify-center relative overflow-hidden">
         <h1
           className="text-4xl md:text-6xl font-normal leading-tight text-gray-400"
@@ -61,12 +58,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div
-          className="mt-10"
-          data-aos="zoom-in-up"
-          data-aos-delay="1300"
-          data-aos-duration="600"
-        >
+        <div className="mt-10">
           <a
             href="#learn-more"
             className="text-gray-500 hover:text-white transition"
