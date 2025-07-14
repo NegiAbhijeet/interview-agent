@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FilledButtonWrapper from './filledButtonWrapper';
 import OutlineButtonWrapper from "./OutlineButtonWrapper";
 import { LayoutWrapper } from './layout-wrapper';
+import { Lightbulb } from 'lucide-react';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
@@ -18,7 +19,7 @@ const CtaSection = () => {
       // Infinite message loop
       const messageTl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
       const messages = [
-        "👋 Hi! I'm Nova. Are you ready to start hiring?",
+        "👋 Hi, I’m nova, are you ready for interview?",
         "💡 Ready to discover top talent?"
       ];
 
@@ -68,10 +69,10 @@ const CtaSection = () => {
             ref={textRef}
             className="inline-block px-4 py-2 rounded-full border border-white/40 text-sm font-medium backdrop-blur-sm bg-white/10 min-h-[2.5rem]"
           />
-          <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2>
-          <p className="text-lg text-white/80">Questions? Curious? Connect with us.</p>
+          {/* <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2> */}
+          <p className="text-lg text-white/80 flex items-center justify-center"><span>Still Hiring the Old Way? You're Missing Out.&nbsp;</span><Lightbulb className='text-yellow-400' /></p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <OutlineButtonWrapper>Get a demo</OutlineButtonWrapper>
+            <OutlineButtonWrapper>Get a Demo</OutlineButtonWrapper>
             <FilledButtonWrapper>▶ View 5 min demo</FilledButtonWrapper>
           </div>
         </div>

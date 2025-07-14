@@ -55,14 +55,14 @@ export default function Testimonials() {
                 {/* Gradient Background Bar */}
                 <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
                     <div className="space-y-2">
-                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading recruiters" />
+                        <HeadingWrapper icon={ShieldCheck} text="Trusted by leading Recuriters & job seekers" />
 
                         <h2
                             ref={headingRef}
                             data-aos="fade-up"
                             className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                         >
-                            See how AI Interview Agent improves hiring and preparation
+                            The Future of Interviews? It's Already Here.
                         </h2>
                         <p
                             ref={paragraphRef}
@@ -70,7 +70,7 @@ export default function Testimonials() {
                             data-aos-delay="100"
                             className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                         >
-                            Real stories from Recruiters and Candidates.
+                            Don't get left behind : Real stories prove AI Interview Agent is the secret you're missing!
                         </p>
                     </div>
                 </div>

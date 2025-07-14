@@ -32,10 +32,10 @@ export function Navbar() {
           <div className="flex items-center gap-4">
 
             <FilledButtonWrapper>
-              Dashboard
+              Login
             </FilledButtonWrapper>
             <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
-              Get a demo
+              Get a Demo
             </OutlineLinkWrapper>
 
           </div>

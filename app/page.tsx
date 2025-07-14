@@ -46,14 +46,14 @@ export default function Page() {
               data-aos-delay="900"
               data-aos-duration="600"
             >
-              <FilledButtonWrapper>Start Screening</FilledButtonWrapper>
+              <FilledButtonWrapper className="bg-yellow-400 text-black hover:bg-yellow-400">Start for free</FilledButtonWrapper>
             </div>
             <div
               data-aos="zoom-in-up"
               data-aos-delay="1200"
               data-aos-duration="600"
             >
-              <OutlineButtonWrapper>Get a demo</OutlineButtonWrapper>
+              <OutlineButtonWrapper>Get a Demo</OutlineButtonWrapper>
             </div>
           </div>
 

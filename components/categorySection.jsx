@@ -2,6 +2,9 @@ import HeadingWrapper from "@/components/headingWrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
     Target, Rocket, Users, Search, Lightbulb, TrendingUp, Sparkles,
+    Flame,
+    Zap,
+    AlarmClock,
 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import AOS from 'aos';
@@ -19,58 +22,59 @@ export default function CategorySection() {
 
     const cardData = [
         {
-            type: "Companies",
+            type: "Empowering Recruiters",
             icon: <Users className="h-7 w-7 text-blue-400" />,
             badgeColor: "blue",
-            title: "Don't miss your next great hire.",
-            description: "Streamline your recruitment process with intelligent matching",
+            title: "Unlock Your Next Great Hire. Faster.",
+            description: "Streamline your recruitment with intelligent AI and unmatched efficiency.",
             items: [
                 {
+                    icon: <Flame className="h-5 w-5 text-yellow-400" />,
+                    title: "Ignite Recruiter Productivity",
+                    desc: "Increase recruiter output by up to 10x. Nova's automated screening lets your team focus solely on engaging perfect-fit candidates.",
+                    color: "purple",
+                },
+                {
                     icon: <Target className="h-5 w-5 text-purple-400" />,
-                    title: "Never miss top interview opportunities again.",
-                    desc: "Smart notifications and automated scheduling",
+                    title: "Never Miss Top Talent",
+                    desc: "Engage every candidate with live, two-way conversations at scale, ensuring you never miss a great hire with smart scheduling.",
                     color: "purple",
                 },
                 {
-                    icon: <Rocket className="h-5 w-5 text-purple-400" />,
-                    title: "Increase recruitment productivity by up to 10x.",
-                    desc: "AI-powered candidate screening and matching",
-                    color: "purple",
-                },
-                {
-                    icon: <TrendingUp className="h-5 w-5 text-orange-400" />,
-                    title: "Invest smart: connect only with the right-fit candidates.",
-                    desc: "Advanced filtering and compatibility scoring",
+                    icon: <Lightbulb className="h-5 w-5 text-orange-400" />,
+                    title: "Invest Smarter, Hire Better",
+                    desc: "Pinpoint top talent from day one with smart filtering and compatibility scoring.",
                     color: "orange",
                 },
             ],
         },
         {
-            type: "Candidates",
+            type: "Own Your Next Interview",
             icon: <Search className="h-7 w-7 text-purple-400" />,
             badgeColor: "purple",
-            title: "Don't miss your next interview.",
-            description: "Ace every interview with personalized preparation tools",
+            title: "Don't Just Apply. Dominate. Your Next Interview Awaits.",
+            description: "Unlock personalized preparation tools and ace every opportunity.",
             items: [
                 {
-                    icon: <Lightbulb className="h-5 w-5 text-blue-400" />,
-                    title: "Get actionable insights into your weak points.",
-                    desc: "Detailed performance analytics and improvement tips",
+                    icon: <Zap className="h-5 w-5 text-orange-400" />,
+                    title: "Pinpoint & Power Up Your Weaknesses",
+                    desc: "Uncover your exact weak points with Nova's AI feedback – never miss a perfect answer again.",
                     color: "blue",
                 },
                 {
-                    icon: <Users className="h-5 w-5 text-violet-400" />,
-                    title: "Practice with in-depth mock interviews by domain experts.",
-                    desc: "Real-time feedback from industry professionals",
+                    icon: <AlarmClock className="h-5 w-5 text-red-400" />,
+                    title: "Practice Like a Pro, For Free",
+                    desc: "Practice daily with Nova's AI for 15 free minutes, getting expert feedback to instantly refine your answers.",
                     color: "violet",
                 },
                 {
-                    icon: <Target className="h-5 w-5 text-purple-400" />,
-                    title: "Grab your next job interview with confidence.",
-                    desc: "Personalized coaching and confidence building",
+                    icon: <Rocket className="h-5 w-5 text-purple-400" />,
+                    title: "Grab Your Next Opportunity with Unshakeable Confidence",
+                    desc: "Unlock unstoppable confidence for every interview – don't get left behind.",
                     color: "purple",
                 },
-            ],
+            ]
+            ,
         },
     ];
 
@@ -80,7 +84,7 @@ export default function CategorySection() {
                 <div className="mx-auto relative z-10">
                     {/* Section Header */}
                     <div className="text-center mb-16">
-                        <HeadingWrapper icon={Sparkles} text="Dual Solutions" />
+                        <HeadingWrapper icon={Sparkles} text="The Dual Solution You Didn't Know You Needed." />
 
                         <h2
                             ref={headingRef}
@@ -97,11 +101,10 @@ export default function CategorySection() {
                             data-aos="fade-up"
                             data-aos-delay="400"
                         >
-                            Whether you're hiring or job hunting, we've got the tools to make it seamless
-                        </p>
+                            Whether you're shaping a team or crafting your career, dive into the seamless experience our platform offers.                        </p>
                     </div>
 
-                    <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 max-w-7xl mx-auto relative">
+                    <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
                         <div
                             className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
                             style={{
@@ -126,7 +129,7 @@ export default function CategorySection() {
                                             </div>
                                             <div>
                                                 <span className={`text-sm font-semibold text-${section.badgeColor}-400 uppercase tracking-wider block`}>
-                                                    For {section.type}
+                                                    {section.type}
                                                 </span>
                                                 <div className={`w-12 h-0.5 bg-gradient-to-r from-${section.badgeColor}-500 to-${section.badgeColor}-500 mt-1`} />
                                             </div>

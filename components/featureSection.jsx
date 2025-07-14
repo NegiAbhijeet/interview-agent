@@ -19,25 +19,25 @@ const features = [
   {
     title: "AI-Powered Agent",
     description:
-      "Joins the call, asks every question for you, records and logs each answer.",
+      "Our intelligent agent joins every call, asks all your predefined questions, and meticulously logs each answer. It's like having an extra team member for every interview.",
     icon: CheckCircle,
   },
   {
-    title: "Scripted Interviews",
+    title: "Scripted & Fair Interviews",
     description:
-      "Every candidate hears the same set of questions that match your job requirement, so results stay fair.",
+      "Ensure consistency and fairness. Every candidate hears the exact same set of questions, perfectly aligned with your job requirements, guaranteeing unbiased and comparable results.",
     icon: Edit3,
   },
   {
-    title: "Mock Interview Mode",
+    title: "Mock Interview Mode with AI Feedback",
     description:
-      "Candidates get instant practice with AI feedback and 15 free minutes that refill daily.",
+      "Practice and perfect! Get instant AI feedback on your responses. Enjoy 15 free minutes daily to boost your confidence",
     icon: Clock,
   },
   {
-    title: "Searchable Transcript",
+    title: "Scale Hiring, Effortlessly",
     description:
-      "A time-stamped transcript and short summary land in your inbox when the call ends.",
+      "Handle any volume, from a few interviews to thousands, without extra staff. Focus on talent, not logistics",
     icon: MessageSquare,
   },
 ];
@@ -57,7 +57,7 @@ const FeatureSection = () => {
               data-aos-delay="200"
               data-aos-duration="600"
             >
-              Everything you need for smarter interviews
+              Your Complete Hub for Smarter Interviews.
             </h2>
 
             <p
@@ -66,7 +66,7 @@ const FeatureSection = () => {
               data-aos-delay="400"
               data-aos-duration="600"
             >
-              One platform for Recruiters and Job Seekers.
+              The unified platform designed for Recruiters, HR Agencies, and Motivated Candidates.
             </p>
           </div>
         </div>
