@@ -6,41 +6,45 @@ import {
   CardContent,
   CardDescription,
 } from "@/components/ui/card";
-import {
-  CheckCircle,
-  Edit3,
-  Clock,
-  MessageSquare,
-  Settings,
-} from "lucide-react";
+
 import HeadingComponentWrapper from "./headingComponentWrapper";
+
+import {
+  Bot,
+  Settings,
+  ClipboardList,
+  MessageCircleCode,
+  MessageSquare,
+} from "lucide-react";
 
 const features = [
   {
     title: "AI-Powered Agent",
     description:
       "Our intelligent agent joins every call, asks all your predefined questions, and meticulously logs each answer. It's like having an extra team member for every interview.",
-    icon: CheckCircle,
+    icon: <Bot className="h-6 w-6 text-blue-500" />,
   },
   {
     title: "Scripted & Fair Interviews",
     description:
       "Ensure consistency and fairness. Every candidate hears the exact same set of questions, perfectly aligned with your job requirements, guaranteeing unbiased and comparable results.",
-    icon: Edit3,
+    icon: <ClipboardList className="h-6 w-6 text-green-500" />,
   },
   {
     title: "Mock Interview Mode with AI Feedback",
     description:
       "Practice and perfect! Get instant AI feedback on your responses. Enjoy 15 free minutes daily to boost your confidence",
-    icon: Clock,
+    icon: <MessageCircleCode className="h-6 w-6 text-purple-500" />,
   },
   {
     title: "Scale Hiring, Effortlessly",
     description:
       "Handle any volume, from a few interviews to thousands, without extra staff. Focus on talent, not logistics",
-    icon: MessageSquare,
+    icon: <MessageSquare className="h-6 w-6 text-pink-500" />, // ✅ Fixed
   },
 ];
+
+
 
 const FeatureSection = () => {
   return (
@@ -66,7 +70,6 @@ const FeatureSection = () => {
           />
 
           {features.map((feature, index) => {
-            const Icon = feature.icon;
             return (
               <div
                 key={index}
@@ -78,7 +81,7 @@ const FeatureSection = () => {
                 <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
                   <CardHeader className="pb-2">
                     <div className="mb-2 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-500/20 p-2 w-fit">
-                      <Icon className="h-6 w-6 text-purple-600" />
+                      {feature.icon}
                     </div>
                     <CardTitle className="text-xl font-bold text-gray-200">
                       {feature.title}

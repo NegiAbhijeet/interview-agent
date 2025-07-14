@@ -1,37 +1,45 @@
 "use client";
-import { CheckCircle, Users, Zap, LineChart } from "lucide-react";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import CtaSection from "@/components/ctaSection";
 import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection";
 import HeadingComponentWrapper from "@/components/headingComponentWrapper";
 import AdvantageSection from "@/components/advantageSection";
+import {
+  GraduationCap,
+  Lightbulb,
+  Bolt,
+  ShieldCheck,
+  BarChart,
+  Rocket,
+  SearchCheck,
+  Users,
+} from "lucide-react";
+
 const features = [
   {
     type: "Job Seekers",
-    icon: <CheckCircle className="h-7 w-7 text-blue-400" />,
+    icon: <GraduationCap className="h-7 w-7 text-blue-400" />, // learning/growth
     badgeColor: "blue",
     items: [
       {
-        icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
+        icon: <SearchCheck className="h-5 w-5 text-indigo-400" />,
         title: "Your Next Opportunity Awaits",
         desc: "This is your moment to master every interview.",
         color: "indigo",
       },
       {
-        icon: <CheckCircle className="h-5 w-5 text-orange-400" />,
+        icon: <Lightbulb className="h-5 w-5 text-orange-400" />,
         title: "Practice for Perfection",
         desc: "Get instant AI feedback daily to pinpoint weaknesses and build unshakeable confidence.",
-        color: "indigo",
+        color: "orange",
       },
       {
-        icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
+        icon: <Rocket className="h-5 w-5 text-teal-400" />,
         title: "Be Unignorable",
         desc: "Stop guessing and start excelling to secure your dream job or internship.",
         color: "teal",
@@ -40,23 +48,23 @@ const features = [
   },
   {
     type: "Recruiting Teams",
-    icon: <CheckCircle className="h-7 w-7 text-purple-400" />,
+    icon: <Users className="h-7 w-7 text-purple-400" />, // team-focused
     badgeColor: "purple",
     items: [
       {
-        icon: <CheckCircle className="h-5 w-5 text-indigo-400" />,
+        icon: <Bolt className="h-5 w-5 text-indigo-400" />,
         title: "Stop Wasting Time: Start Winning Talent",
         desc: "Revolutionize hiring by eliminating busywork, bias, and endless hours.",
         color: "indigo",
       },
       {
-        icon: <CheckCircle className="h-5 w-5 text-orange-400" />,
+        icon: <BarChart className="h-5 w-5 text-orange-400" />,
         title: "Strategic Advantage",
         desc: "Slash screening time, gain crystal-clear data, and handle hundreds & thousands of interviews with unprecedented speed.",
-        color: "indigo",
+        color: "orange",
       },
       {
-        icon: <CheckCircle className="h-5 w-5 text-teal-400" />,
+        icon: <ShieldCheck className="h-5 w-5 text-teal-400" />,
         title: "Don't Get Left Behind",
         desc: "Access the insights and efficiency top teams are already leveraging.",
         color: "teal",
@@ -64,6 +72,7 @@ const features = [
     ],
   },
 ];
+
 
 const page = () => {
   return (
