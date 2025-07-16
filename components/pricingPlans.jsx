@@ -7,101 +7,135 @@ import { Badge } from "@/components/ui/badge"
 
 const personalPlans = [
     {
-        name: "Free",
-        price: "$0",
-        period: "/month",
-        description: "Perfect for individuals getting started",
+        name: "Starter Practice",
+        price: "$40",
+        period: "one-time",
+        description: "50 interviews + 30 free for getting started",
         icon: <Star className="w-6 h-6" />,
-        features: ["Up to 5 projects", "10GB storage", "Basic support", "Standard templates", "Mobile app access"],
-        buttonText: "Get Started",
+        features: [
+            "50 interviews included",
+            "30 bonus interviews",
+            "$0.8 per interview",
+            "Total: 80 interviews",
+            "Basic support"
+        ],
+        buttonText: "Buy Now",
         popular: false,
         gradient: "from-gray-50 to-white",
         borderColor: "border-gray-200",
         buttonStyle: "bg-gray-900 hover:bg-gray-800 text-white",
     },
     {
-        name: "Starter",
-        price: "$20",
-        period: "/month",
-        description: "Ideal for growing businesses and teams",
+        name: "Interview Pro",
+        price: "$48",
+        period: "one-time",
+        description: "80 interviews + 30 free for serious prep",
         icon: <Zap className="w-6 h-6" />,
         features: [
-            "Unlimited projects",
-            "100GB storage",
-            "Priority support",
-            "Premium templates",
-            "Advanced analytics",
-            "Team collaboration",
-            "API access",
+            "80 interviews included",
+            "30 bonus interviews",
+            "$0.6 per interview",
+            "Total: 110 interviews",
+            "Priority support"
         ],
-        buttonText: "Start Free Trial",
+        buttonText: "Buy Now",
         popular: true,
         gradient: "from-blue-50 to-blue-100",
         borderColor: "border-blue-200",
         buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
     },
     {
-        name: "Starter",
-        price: "$20",
-        period: "/month",
-        description: "Ideal for growing businesses and teams",
-        icon: <Zap className="w-6 h-6" />,
+        name: "Confidence Max",
+        price: "$75",
+        period: "one-time",
+        description: "150 interviews + 30 free for max readiness",
+        icon: <Crown className="w-6 h-6" />,
         features: [
-            "Unlimited projects",
-            "100GB storage",
-            "Priority support",
-            "Premium templates",
-            "Advanced analytics",
-            "Team collaboration",
-            "API access",
+            "150 interviews included",
+            "30 bonus interviews",
+            "$0.5 per interview",
+            "Total: 180 interviews",
+            "Premium support"
         ],
-        buttonText: "Start Free Trial",
-        popular: true,
-        gradient: "from-blue-50 to-blue-100",
-        borderColor: "border-blue-200",
-        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
+        buttonText: "Buy Now",
+        popular: false,
+        gradient: "from-yellow-50 to-yellow-100",
+        borderColor: "border-yellow-200",
+        buttonStyle: "bg-yellow-500 hover:bg-yellow-600 text-white",
     },
 ]
 
 const businessPlans = [
     {
         name: "Professional",
-        price: "$55",
-        period: "/month",
-        description: "Advanced features for power users",
+        price: "$400",
+        period: "one-time",
+        description: "1–200 interviews for small teams",
+        icon: <Zap className="w-6 h-6" />,
+        features: [
+            "Up to 200 interviews",
+            "$2 per interview",
+            "₹34,200 approx",
+            "Basic insights & reporting"
+        ],
+        buttonText: "Get Started",
+        popular: false,
+        recommended: false,
+        gradient: "from-gray-50 to-white",
+        borderColor: "border-gray-200",
+        buttonStyle: "bg-gray-900 hover:bg-gray-800 text-white",
+    },
+    {
+        name: "Team Connect",
+        price: "$1,800",
+        period: "one-time",
+        description: "201–1000 interviews for growing teams",
+        icon: <Star className="w-6 h-6" />,
+        features: [
+            "Up to 1000 interviews",
+            "$1.8 per interview",
+            "₹1,54,000 approx",
+            "Team analytics",
+            "Email support"
+        ],
+        buttonText: "Buy Now",
+        popular: true,
+        gradient: "from-blue-50 to-blue-100",
+        borderColor: "border-blue-200",
+        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
+    },
+    {
+        name: "Scale",
+        price: "$7,500",
+        period: "one-time",
+        description: "1001–5000 interviews for scaling businesses",
         icon: <Crown className="w-6 h-6" />,
         features: [
-            "Everything in Starter",
-            "500GB storage",
-            "24/7 dedicated support",
-            "Custom integrations",
-            "Advanced security",
-            "White-label options",
-            "Custom domains",
-            "Priority processing",
+            "Up to 5000 interviews",
+            "$1.5 per interview",
+            "₹6.4 lakhs approx",
+            "Advanced insights",
+            "Priority support"
         ],
-        buttonText: "Upgrade Now",
+        buttonText: "Buy Now",
         popular: false,
-        recommended: true,
         gradient: "from-purple-50 to-purple-100",
         borderColor: "border-purple-200",
         buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
     },
     {
         name: "Enterprise",
-        price: "Custom",
-        period: "",
-        description: "Tailored solutions for large organizations",
+        price: "$20,000+",
+        period: "custom",
+        description: "5000–20,000+ interviews, tailored to your needs",
         icon: <Building2 className="w-6 h-6" />,
         features: [
-            "Everything in Professional",
-            "Unlimited storage",
+            "Custom interview volume",
+            "$1 per interview",
+            "₹17 lakhs+ approx",
+            "Custom dashboards",
             "Dedicated account manager",
-            "Custom development",
-            "SLA guarantee",
-            "On-premise deployment",
-            "Advanced compliance",
-            "Custom training",
+            "API access"
         ],
         buttonText: "Contact Sales",
         popular: false,
@@ -110,28 +144,9 @@ const businessPlans = [
         buttonStyle:
             "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white",
     },
-    {
-        name: "Starter",
-        price: "$20",
-        period: "/month",
-        description: "Ideal for growing businesses and teams",
-        icon: <Zap className="w-6 h-6" />,
-        features: [
-            "Unlimited projects",
-            "100GB storage",
-            "Priority support",
-            "Premium templates",
-            "Advanced analytics",
-            "Team collaboration",
-            "API access",
-        ],
-        buttonText: "Start Free Trial",
-        popular: true,
-        gradient: "from-blue-50 to-blue-100",
-        borderColor: "border-blue-200",
-        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
-    },
 ]
+
+
 
 export default function PricingPlans() {
     const [planType, setPlanType] = useState("personal")
@@ -175,11 +190,11 @@ export default function PricingPlans() {
 
 
                     {/* Pricing Cards */}
-                    <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch mt-12">
+                    <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto mt-12">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
-                                className={`relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col h-full ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
+                                className={`min-w-[300px] flex-1 max-w-sm relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col h-full ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
                                     } ${plan.popular ? "ring-blue-500" : plan.recommended ? "ring-purple-500" : ""}`}
                             >
                                 {/* Badges */}
@@ -229,6 +244,8 @@ export default function PricingPlans() {
                             </div>
                         ))}
                     </div>
+
+
 
                     {/* Bottom Section */}
                     <div className="text-center mt-16">
