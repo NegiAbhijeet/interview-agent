@@ -7,6 +7,24 @@ import { Badge } from "@/components/ui/badge"
 
 const personalPlans = [
     {
+        name: "Free Plan",
+        price: "$0",
+        period: "monthly",
+        description: "15 minutes of practice interviews daily",
+        icon: <Check className="w-6 h-6" />,
+        features: [
+            "15 minutes per day",
+            "Daily reset",
+            "No payment required",
+            "Good for getting started"
+        ],
+        buttonText: "Start Free",
+        popular: false,
+        gradient: "from-green-50 to-white",
+        borderColor: "border-green-200",
+        buttonStyle: "bg-green-600 hover:bg-green-700 text-white",
+    },
+    {
         name: "Starter Practice",
         price: "$40",
         period: "one-time",
@@ -194,9 +212,10 @@ export default function PricingPlans() {
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
-                                className={`min-w-[300px] flex-1 max-w-sm relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col h-full ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
+                                className={`w-full sm:w-[340px] md:w-[380px] lg:w-[400px] xl:w-[420px] relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex flex-col h-full min-h-[600px] ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
                                     } ${plan.popular ? "ring-blue-500" : plan.recommended ? "ring-purple-500" : ""}`}
                             >
+
                                 {/* Badges */}
                                 {plan.popular && (
                                     <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1">
