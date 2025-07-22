@@ -22,11 +22,16 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-      sans: ['var(--font-plus-jakarta)', 'sans-serif'],
-      heading: ['var(--font-dm-serif)', 'serif'],
-      manrope: ['var(--font-manrope)', 'sans-serif'], // optional alias
-
-    },
+        sans: [
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
@@ -114,7 +119,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("lightswind/plugin")],
 } satisfies Config
 
 export default config

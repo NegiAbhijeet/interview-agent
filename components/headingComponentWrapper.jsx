@@ -5,7 +5,7 @@ const HeadingComponentWrapper = ({ first, second, third, icon }) => {
             <HeadingWrapper icon={icon} text={first} />
 
             <h2
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
+                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gradient"
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="600"
@@ -14,7 +14,7 @@ const HeadingComponentWrapper = ({ first, second, third, icon }) => {
             </h2>
 
             <p
-                className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                className="max-w-[900px] mx-auto text-gray-900/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                 data-aos="fade-up"
                 data-aos-delay="400"
                 data-aos-duration="600"

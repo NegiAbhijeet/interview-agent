@@ -69,7 +69,7 @@ const InterviewShowcase = () => {
     <LayoutWrapper>
       <div
         ref={containerRef}
-        className="w-[80%] mx-auto rounded-2xl h-[80vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 relative overflow-hidden"
+        className="w-[80%] mx-auto rounded-2xl h-[80vh] flex items-center justify-center relative overflow-hidden"
       >
         {/* Animated Cards */}
         <div
@@ -162,9 +162,9 @@ const InterviewShowcase = () => {
 
         {/* Main image */}
         <img
-          src="/graphic-image.jpeg"
+          src="/hero-image.jpeg"
           alt="Interview"
-          className="h-[90%] rounded-xl shadow-2xl -z-1"
+          className="h-[100%] rounded-xl shadow-2xl -z-1"
         />
       </div>
     </LayoutWrapper>
