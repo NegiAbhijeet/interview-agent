@@ -10,12 +10,7 @@ import NormalButton from "@/components/buttons/normalButton";
 export default function Page() {
   return (
     <section className="relative overflow-hidden text-white">
-      {/* --- Dotted Grid Background (Furthest Behind) --- */}
-      <div className="absolute inset-0 [background-size:20px_20px] [background-image:radial-gradient(#000000_1px,transparent_1px)] dark:[background-image:radial-gradient(#ffffff_1px,transparent_1px)] -z-30 opacity-25"></div>
-
-      {/* --- Radial Mask Overlay --- */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)] -z-10"></div>
-
+    
       <div className="text-center min-h-screen z-10 flex flex-col items-center justify-center relative overflow-hidden">
         <h1
           className="text-4xl md:text-6xl font-normal leading-tight text-black"
@@ -31,13 +26,12 @@ export default function Page() {
         </h1>
 
         <div
-          className="mt-6 max-w-3xl mx-auto text-2xl font-light text-gray-700"
+          className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="600"
         >
-          Hire faster and ace your interview
-        </div>
+          Nova is built for everyone in the interview ecosystem — giving recruiters powerful tools and candidates a clear path to success.        </div>
 
         <div
           className="mt-8 flex items-center gap-4 justify-center w-full"

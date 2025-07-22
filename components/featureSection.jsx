@@ -77,6 +77,8 @@ const FeatureSection = () => {
 
               return (
                 <GlowingCard
+                  data-aos="fade-up"
+                  data-aos-delay={600 + index * 200}
                   key={index}
                   glowColor={feature.glowColor}
                   className={`min-h-[230px] ${sizeClass} flex flex-col p-0`}

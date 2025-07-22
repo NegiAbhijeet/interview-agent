@@ -16,7 +16,7 @@ export function Navbar() {
       : "text-black/60 hover:text-black/80 hover:scale-105"}`
 
   return (
-    <header className="fixed top-10 w-full z-50" data-aos="fade-down" data-aos-duration="600">
+    <header className="fixed top-8 w-full z-50" data-aos="fade-down" data-aos-duration="600">
       <section className="w-[90%] max-w-screen-xl mx-auto">
         <div
           className="px-4 py-2 rounded-full backdrop-blur-lg shadow-lg flex items-center justify-between transition"

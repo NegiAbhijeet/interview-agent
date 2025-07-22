@@ -18,7 +18,9 @@ import {
   Rocket,
   SearchCheck,
   Users,
+  Settings,
 } from "lucide-react";
+import FeatureCard from "@/components/FeatureCard";
 
 const features = [
   {
@@ -82,7 +84,7 @@ const page = () => {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-gray-400"
+                className="text-4xl md:text-6xl font-normal leading-tight text-black"
                 data-aos="fade-up"
                 data-aos-delay="0"
                 data-aos-duration="600"
@@ -93,7 +95,7 @@ const page = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="600"
-                className="mx-auto max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
               >
                 Nova revolutionizes first-round interviews by eliminating manual
                 screening and unconscious bias. Our intelligent agent(Nova) asks
@@ -115,36 +117,19 @@ const page = () => {
           <div className="mx-auto">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
-                <div
-                  className="inline-block px-6 py-2 rounded-full bg-purple-100 text-sm text-purple-600"
-                  data-aos="fade-up"
-                  data-aos-delay="0"
-                  data-aos-duration="600"
-                >
-                  Our Mission
-                </div>
-                <h2
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="600"
-                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent"
-                >
-                  Revolutionizing Interview Preparation
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  data-aos-duration="600"
-                  className="text-gray-300 md:text-xl/relaxed"
-                >
-                  We're revolutionizing talent discovery and preparation. Our
+                <HeadingComponentWrapper
+                  icon={Lightbulb}
+                  first="Our Mission"
+                  second="Revolutionizing Interview Preparation"
+                  third="We're revolutionizing talent discovery and preparation. Our
                   vision is to redefine first-round interviews, creating a
                   seamless and equitable experience. We empower recruiting teams
                   with rapid, objective assessments for data-driven hires, while
                   equipping job seekers with tools to master interviews and
                   confidently seize their future. This is building a smarter,
-                  fairer future for talent worldwide.{" "}
-                </p>
+                  fairer future for talent worldwide."
+                />
+
               </div>
               <div className="flex items-center justify-end">
                 <div className="relative w-full max-w-[550px]">
@@ -173,69 +158,9 @@ const page = () => {
               third="Unlock Unprecedented Efficiency & Opportunity."
             />
             <div className="grid gap-4 lg:grid-cols-2 lg:gap-6 max-w-7xl mx-auto relative">
-              <div
-                className="opacity-70 blur-2xl absolute w-[70%] h-[100%] bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 rounded-3xl pointer-events-none"
-                style={{
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  zIndex: "-1",
-                }}
-              />
-              {features.map((section, idx) => (
-                <div
-                  key={idx}
-                  className="spectacledcoder-gradient-card w-full"
-                  data-aos="fade-up"
-                  data-aos-delay={600 + idx * 200}
-                >
-                  <Card className="spectacledcoder-content-card group relative overflow-hidden rounded-2xl border-0 bg-white shadow-lg transition-all hover:shadow-xl">
-                    <CardHeader className="relative z-10 py-6 px-6">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div
-                          className={`p-3 rounded-xl bg-gradient-to-br from-${section.badgeColor}-500/20 to-${section.badgeColor}-500/20 border border-${section.badgeColor}-500/30`}
-                        >
-                          {section.icon}
-                        </div>
-                        <div>
-                          <span
-                            className={`text-sm font-semibold text-${section.badgeColor}-400 uppercase tracking-wider block`}
-                          >
-                            For {section.type}
-                          </span>
-                          <div
-                            className={`w-12 h-0.5 bg-gradient-to-r from-${section.badgeColor}-500 to-${section.badgeColor}-500 mt-1`}
-                          />
-                        </div>
-                      </div>
-                    </CardHeader>
 
-                    <CardContent className="relative z-10 space-y-4 pb-4">
-                      <div className="space-y-2">
-                        {section.items.map((item, itemIdx) => (
-                          <div
-                            key={itemIdx}
-                            className="flex items-start gap-5 group/item p-4 rounded-xl hover:bg-slate-800/50 transition-all duration-300 hover:translate-x-2"
-                          >
-                            <div
-                              className={`p-2.5 rounded-lg bg-gradient-to-br from-${item.color}-500/20 to-${item.color}-500/20 border border-${item.color}-500/30 mt-1`}
-                            >
-                              {item.icon}
-                            </div>
-                            <div>
-                              <p className="text-white font-semibold text-base leading-relaxed mb-1">
-                                {item.title}
-                              </p>
-                              <p className="text-slate-400 text-sm">
-                                {item.desc}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
+              {features.map((section, idx) => (
+                <FeatureCard key={idx} section={section} idx={idx} />
               ))}
             </div>
           </div>
