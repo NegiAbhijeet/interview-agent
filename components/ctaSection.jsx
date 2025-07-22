@@ -2,12 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-import FilledButtonWrapper from './filledButtonWrapper';
-import OutlineButtonWrapper from "./OutlineButtonWrapper";
 import { LayoutWrapper } from './layout-wrapper';
 import { Lightbulb } from 'lucide-react';
-import OutlineLinkWrapper from './OutlineLinkWrapper';
 import NormalButton from './buttons/normalButton';
 import GradientButton from './buttons/GradientButton';
 

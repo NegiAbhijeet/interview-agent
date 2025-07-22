@@ -44,9 +44,6 @@ export default function Page() {
             data-aos-duration="600"
           >
             <GradientButton text="Start for free" />
-            {/* <FilledButtonWrapper className="bg-yellow-400 text-black hover:bg-yellow-400">
-              Start for free
-            </FilledButtonWrapper> */}
           </div>
           <div
             data-aos="zoom-in-up"
