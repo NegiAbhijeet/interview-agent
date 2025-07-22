@@ -1,7 +1,9 @@
+"use client";
 import { Navbar } from '@/components/navbar';
 import Footer from '@/components/Footer';
-// import Menu from "@/components/Menu/menus"
 import LaunchToast from "@/components/LaunchToast"
+import CtaSection from '@/components/ctaSection';
+
 const Parent = ({ children }) => {
     return (
         <div>
@@ -9,6 +11,7 @@ const Parent = ({ children }) => {
             <Navbar />
             {/* <Menu /> */}
             {children}
+            <CtaSection />
             <Footer />
         </div>
     )

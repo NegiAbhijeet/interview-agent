@@ -8,6 +8,8 @@ import OutlineButtonWrapper from "./OutlineButtonWrapper";
 import { LayoutWrapper } from './layout-wrapper';
 import { Lightbulb } from 'lucide-react';
 import OutlineLinkWrapper from './OutlineLinkWrapper';
+import NormalButton from './buttons/normalButton';
+import GradientButton from './buttons/GradientButton';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
@@ -47,12 +49,12 @@ const CtaSection = () => {
       <div
         ref={sectionRef}
         data-aos="fade-up"
-        className="relative w-full rounded-[2rem] overflow-hidden text-white p-10 bg-gradient"
+        className="relative w-full rounded-[2rem] overflow-hidden text-white p-10 bg-gradient-to-r from-blue-400/60  to-pink-500/70"
       >
         {/* Radial Gradient Glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute max-w-[1000px] w-[70%] h-[600px] bg-purple-500 opacity-40 blur-2xl rounded-full top-[-200px] left-1/2 transform -translate-x-1/2" />
-        </div>
+        {/* <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute max-w-4xl w-[70%] h-[600px] bg-purple-200 opacity-40 blur-2xl rounded-full top-[-200px] left-1/2 transform -translate-x-1/2" />
+        </div> */}
 
         {/* Texture Overlay */}
         <div className="absolute inset-0 pointer-events-none opacity-20 mix-blend-overlay">
@@ -67,18 +69,17 @@ const CtaSection = () => {
         {/* Content */}
         <div className="relative z-10 text-center space-y-6">
           <div className='min-h-[50px]'>
-          <div
-            ref={textRef}
-            className="inline-block px-4 py-2 rounded-full border border-white/40 text-sm font-medium backdrop-blur-sm bg-white/10 min-h-[2.5rem]"
-          />
+            <div
+              ref={textRef}
+              className="inline-block px-4 py-2 rounded-full border border-white/40 text-sm font-medium backdrop-blur-sm bg-white/10 min-h-[2.5rem]"
+            />
           </div>
           {/* <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2> */}
           <p className="text-lg text-white/80 flex items-center justify-center"><span>Still Hiring the Old Way? You're Missing Out.&nbsp;</span><Lightbulb className='text-yellow-400' /></p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <OutlineLinkWrapper link={"https://calendly.com/saurabhdocsightai-com/30min"} >
-              Get a Demo
-            </OutlineLinkWrapper>
-            <FilledButtonWrapper>▶ View 5 min demo</FilledButtonWrapper>
+            <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} />
+
+            <GradientButton text='▶ View 5 min demo' />
           </div>
         </div>
       </div>

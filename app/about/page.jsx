@@ -1,11 +1,5 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card";
 import { LayoutWrapper } from "@/components/layout-wrapper";
-import CtaSection from "@/components/ctaSection";
 import AboutFeatureCardsSection from "@/components/AboutFeatureCardsSection";
 import HeadingComponentWrapper from "@/components/headingComponentWrapper";
 import AdvantageSection from "@/components/advantageSection";
@@ -18,7 +12,6 @@ import {
   Rocket,
   SearchCheck,
   Users,
-  Settings,
 } from "lucide-react";
 import FeatureCard from "@/components/FeatureCard";
 
@@ -170,9 +163,6 @@ const page = () => {
       <AboutFeatureCardsSection />
       <AdvantageSection />
 
-      <LayoutWrapper>
-        <CtaSection />
-      </LayoutWrapper>
     </section>
   );
 };

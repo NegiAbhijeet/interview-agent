@@ -197,7 +197,7 @@ export default function PricingPlans() {
                     </div>
 
                     <div className="w-full text-center my-4">
-                        <p className="text-gray-300 text-xl">
+                        <p className="text-gray-900/80 text-xl">
                             {
                                 planType === "personal" ? "Boost confidence with 15 free practice minutes every day. Upgrade for unlimited access."
                                     :
@@ -268,8 +268,8 @@ export default function PricingPlans() {
 
                     {/* Bottom Section */}
                     <div className="text-center mt-16">
-                        <p className="text-gray-300 mb-6">All plans include a 14-day free trial. No credit card required.</p>
-                        <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-400">
+                        <p className="text-gray-900/80 mb-6">All plans include a 14-day free trial. No credit card required.</p>
+                        <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-900/90">
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
                                 Cancel anytime

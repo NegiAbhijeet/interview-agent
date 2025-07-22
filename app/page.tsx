@@ -2,7 +2,6 @@
 import CategorySection from "@/components/categorySection";
 import InterviewShowcase from "@/components/InterviewShowcase";
 import Testimonials from "@/components/Testimonials";
-import CtaSection from "@/components/ctaSection";
 import FeatureSection from "@/components/featureSection";
 import GradientButton from "@/components/buttons/GradientButton";
 import NormalButton from "@/components/buttons/normalButton";
@@ -76,7 +75,6 @@ export default function Page() {
 
       <Testimonials />
 
-      <CtaSection />
     </section>
   );
 }
