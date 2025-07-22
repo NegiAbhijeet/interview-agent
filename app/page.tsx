@@ -35,19 +35,19 @@ export default function Page() {
         <div
           className="mt-8 flex items-center gap-4 justify-center w-full"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="400"
           data-aos-duration="600"
         >
           <div
             data-aos="zoom-in-up"
-            data-aos-delay="900"
+            data-aos-delay="700"
             data-aos-duration="600"
           >
             <GradientButton text="Start for free" />
           </div>
           <div
             data-aos="zoom-in-up"
-            data-aos-delay="1200"
+            data-aos-delay="1000"
             data-aos-duration="600"
           >
             <NormalButton text="Get a Demo" />

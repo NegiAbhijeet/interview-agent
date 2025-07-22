@@ -6,7 +6,7 @@ export default function FeatureCard({ section, idx }: { section: any; idx: numbe
     <div
       className=""
       data-aos="fade-up"
-      data-aos-delay={600 + idx * 200}
+      data-aos-delay={200 + idx * 100}
     >
       <Card className="h-full">
         <CardHeader className="relative z-10 pt-6 pb-2 px-6">

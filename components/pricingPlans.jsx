@@ -175,7 +175,10 @@ export default function PricingPlans() {
             <main className="flex-1">
                 <div className="min-h-screen pb-16">
                     {/* Toggle Buttons */}
-                    <div className="flex justify-center mt-10 space-x-2 p-1 bg-gray-100 rounded-full w-fit mx-auto">
+                    <div className="flex justify-center mt-10 space-x-2 p-1 bg-gray-400/50 rounded-full w-fit mx-auto"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="400"
+                    >
                         <button
                             onClick={() => setPlanType("personal")}
                             className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "personal"
@@ -196,7 +199,9 @@ export default function PricingPlans() {
                         </button>
                     </div>
 
-                    <div className="w-full text-center my-4">
+                    <div className="w-full text-center my-4" data-aos="zoom-in-up"
+                        data-aos-delay="700"
+                    >
                         <p className="text-gray-900/80 text-xl">
                             {
                                 planType === "personal" ? "Boost confidence with 15 free practice minutes every day. Upgrade for unlimited access."
@@ -212,6 +217,8 @@ export default function PricingPlans() {
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
+                                data-aos="fade-up"
+                                data-aos-delay={200 + index * 100}
                                 className={`w-full sm:w-[340px] md:w-[380px] lg:w-[400px] xl:w-[420px] relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex flex-col h-full min-h-[600px] ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
                                     } ${plan.popular ? "ring-blue-500" : plan.recommended ? "ring-purple-500" : ""}`}
                             >

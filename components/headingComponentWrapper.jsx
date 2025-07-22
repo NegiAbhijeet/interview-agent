@@ -16,7 +16,7 @@ const HeadingComponentWrapper = ({ first, second, third, icon }) => {
             <p
                 className="max-w-[900px] mx-auto text-gray-900/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="200"
                 data-aos-duration="600"
             >
                 {third}

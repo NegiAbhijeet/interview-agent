@@ -1,4 +1,6 @@
 import { LayoutWrapper } from "@/components/layout-wrapper";
+import HeadingComponentWrapper from "./headingComponentWrapper";
+import { MessageSquare } from "lucide-react";
 
 const faqs = [
   {
@@ -37,21 +39,20 @@ const FaqSection = () => {
   return (
     <LayoutWrapper>
       <section className="w-full">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-              Frequently Asked Questions
-            </h2>
-            <p className="mx-auto max-w-4xl text-gray-900/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Got questions? We've got answers about minutes, sessions, refunds, and more.
-            </p>
-          </div>
-        </div>
+        <HeadingComponentWrapper
+          icon={MessageSquare}
+          first="FAQs"
+          second="Frequently Asked Questions"
+          third="Got questions? We've got answers about minutes, sessions, refunds, and more."
+        />
+
 
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={200 + index * 100}
               className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-black mb-2">

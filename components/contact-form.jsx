@@ -25,7 +25,6 @@ const ContactForm = ({ heading, description }) => {
             className="space-y-8"
             data-aos="fade-right"
             data-aos-delay="200"
-            data-aos-duration="600"
           >
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">
@@ -127,8 +126,7 @@ const ContactForm = ({ heading, description }) => {
           {/* Right: Form */}
           <div
             data-aos="fade-left"
-            data-aos-delay="400"
-            data-aos-duration="600"
+            data-aos-delay="500"
             className="w-full"
           >
             <Card className="bg-white text-black shadow-lg">

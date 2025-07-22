@@ -67,7 +67,7 @@ export default function TestimonialCards() {
                             return (
                                 <GlowingCard
                                     data-aos="fade-up"
-                                    data-aos-delay={600 + index * 200}
+                                    data-aos-delay={200 + index * 100}
                                     key={index}
                                     glowColor={testimonial.glowColor}
                                     className={`min-h-[230px] ${sizeClass} flex flex-col p-0`}
