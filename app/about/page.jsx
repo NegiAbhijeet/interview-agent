@@ -71,37 +71,38 @@ const features = [
 
 const page = () => {
   return (
-    <section className="relative overflow-hidden text-white mt-[10%]">
+    <section className="relative overflow-hidden text-white mt-[100px] md:mt-[12%] lg-[10%]">
 
-
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h1
-              className="text-4xl md:text-6xl font-normal leading-tight text-black"
-              data-aos="fade-up"
-              data-aos-delay="0"
-              data-aos-duration="600"
-            >
-              About <span className="text-gradient">AI</span> Interview Agent
-            </h1>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="600"
-              className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
-            >
-              Nova revolutionizes first round interviews by eliminating manual
-              screening and unconscious bias. Our intelligent agent(Nova) asks
-              scripted questions, precisely scores every response, and
-              delivers clear, actionable reports within minutes. This means
-              recruiters can hire faster with data backed decisions, while job
-              seekers can practice daily for free to sharpen their skills and
-              boost their confidence. It's the future of talent acquisition,
-              simplified.            </p>
+      <LayoutWrapper removePadding={true}>
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1
+                className="text-4xl md:text-6xl font-normal leading-tight text-black"
+                data-aos="fade-up"
+                data-aos-delay="0"
+                data-aos-duration="600"
+              >
+                About <span className="text-gradient">AI</span> Interview Agent
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="600"
+                className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
+              >
+                Nova revolutionizes first round interviews by eliminating manual
+                screening and unconscious bias. Our intelligent agent(Nova) asks
+                scripted questions, precisely scores every response, and
+                delivers clear, actionable reports within minutes. This means
+                recruiters can hire faster with data backed decisions, while job
+                seekers can practice daily for free to sharpen their skills and
+                boost their confidence. It's the future of talent acquisition,
+                simplified.            </p>
+            </div>
           </div>
         </div>
-      </div>
+      </LayoutWrapper>
       <LayoutWrapper>
         {/* Mission Section */}
         <section className="w-full ">

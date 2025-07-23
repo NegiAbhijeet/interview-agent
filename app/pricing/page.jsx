@@ -6,7 +6,7 @@ import PricingPlans from "@/components/pricingPlans";
 
 const page = () => {
   return (
-    <section className="relative overflow-hidden text-white mt-[10%]">
+    <section className="relative overflow-hidden text-white mt-[100px] md:mt-[12%] lg-[10%]">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
