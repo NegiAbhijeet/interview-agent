@@ -59,10 +59,23 @@ export default function TestimonialCards() {
                 <div className="w-full max-w-7xl mx-auto">
                     <GlowingCards className="flex flex-wrap gap-3">
                         {testimonials.map((testimonial, index) => {
-                            const sizeClass =
-                                index === 1 || index === 2
-                                    ? "w-full md:basis-1/2 lg:basis-1/2"
-                                    : "w-full md:basis-1/2 lg:basis-1/4";
+                            const row = Math.floor(index / 2); // two cards per row
+                            const isEvenRow = row % 2 === 0;
+                            const isFirstInRow = index % 2 === 0;
+
+                            let sizeClass = "w-full md:basis-1/4 lg:basis-1/4"; // default small
+
+                            if (isEvenRow) {
+                                // Even rows: [small, big]
+                                sizeClass = isFirstInRow
+                                    ? "w-full md:basis-1/4 lg:basis-1/4" // small
+                                    : "w-full md:basis-1/2 lg:basis-1/2"; // big
+                            } else {
+                                // Odd rows: [big, small]
+                                sizeClass = isFirstInRow
+                                    ? "w-full md:basis-1/2 lg:basis-1/2" // big
+                                    : "w-full md:basis-1/4 lg:basis-1/4"; // small
+                            }
 
                             return (
                                 <GlowingCard
@@ -95,6 +108,7 @@ export default function TestimonialCards() {
                         })}
                     </GlowingCards>
                 </div>
+
             </section>
         </LayoutWrapper>
     );

@@ -69,11 +69,28 @@ const FeatureSection = () => {
         <div className="w-full max-w-7xl mx-auto">
           <GlowingCards className="flex flex-wrap gap-3">
             {features.map((feature, index) => {
-              // Responsive size: big for index 1 & 2 on lg, else 25%
-              const sizeClass =
-                index === 1 || index === 2
-                  ? 'w-full md:basis-1/2 lg:basis-1/2' // Big cards
-                  : 'w-full md:basis-1/2 lg:basis-1/4'; // Small cards
+              // For zero-based index, determine row (0-based)
+              const row = Math.floor(index / 2); // every 2 cards per row
+
+              // For each row, alternate sizes: 
+              // even rows: [small, big]
+              // odd rows: [big, small]
+              const isEvenRow = row % 2 === 0;
+              const isFirstInRow = index % 2 === 0;
+
+              let sizeClass = "w-full md:basis-1/4 lg:basis-1/4"; // default small
+
+              if (isEvenRow) {
+                // Row 0, 2, 4... => first card small, second big
+                sizeClass = isFirstInRow
+                  ? "w-full md:basis-1/4 lg:basis-1/4" // small
+                  : "w-full md:basis-1/2 lg:basis-1/2"; // big
+              } else {
+                // Row 1, 3, 5... => first card big, second small
+                sizeClass = isFirstInRow
+                  ? "w-full md:basis-1/2 lg:basis-1/2" // big
+                  : "w-full md:basis-1/4 lg:basis-1/4"; // small
+              }
 
               return (
                 <GlowingCard
@@ -92,6 +109,7 @@ const FeatureSection = () => {
               );
             })}
           </GlowingCards>
+
         </div>
 
 

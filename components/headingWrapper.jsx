@@ -8,7 +8,7 @@ const HeadingWrapper = ({ icon: Icon, text, className = '' }) => {
             data-aos-delay="0"
         >
             <div className="flex items-center gap-3">
-                {Icon && <Icon className="h-4 w-4 text-blue-500" />}
+                {Icon && <Icon className="h-4 w-4 text-blue-500 hidden md:block" />}
                 <span className="text-sm font-medium text-blue-500">{text}</span>
             </div>
         </div>

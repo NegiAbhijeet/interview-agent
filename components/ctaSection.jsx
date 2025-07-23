@@ -45,7 +45,7 @@ const CtaSection = () => {
       <div
         ref={sectionRef}
         data-aos="fade-up"
-        className="relative w-full rounded-[2rem] overflow-hidden text-white p-10 bg-gradient-to-r from-blue-400/60  to-pink-500/70"
+        className="relative w-full rounded-[2rem] overflow-hidden text-white p-6 md:p-10 bg-gradient-to-r from-blue-400/60  to-pink-500/70"
       >
         {/* Radial Gradient Glow */}
         {/* <div className="absolute inset-0 pointer-events-none">
@@ -73,9 +73,9 @@ const CtaSection = () => {
           {/* <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2> */}
           <p className="text-lg text-white/80 flex items-center justify-center"><span>Still Hiring the Old Way? You're Missing Out.&nbsp;</span><Lightbulb className='text-yellow-400' /></p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} />
+            <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} className='min-w-[200px]' />
 
-            <GradientButton text='▶ View 5 min demo' />
+            <GradientButton text='▶ View 5 min demo' className='min-w-[200px]' />
           </div>
         </div>
       </div>
