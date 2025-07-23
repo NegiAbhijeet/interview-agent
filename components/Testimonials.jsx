@@ -52,8 +52,8 @@ export default function TestimonialCards() {
                 <HeadingComponentWrapper
                     icon={ShieldCheck}
                     first="Trusted by leading Recruiters & Job Seekers"
-                    second="What They’re Saying"
-                    third="Real voices sharing how AI Interview Agent transforms the hiring journey"
+                    second="The Future of Interviews? It's Already Here."
+                    third="Real stories prove AI Interview Agent is the secret you're missing!"
                 />
 
                 <div className="w-full max-w-7xl mx-auto">

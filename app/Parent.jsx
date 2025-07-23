@@ -7,7 +7,7 @@ import CtaSection from '@/components/ctaSection';
 const Parent = ({ children }) => {
     return (
         <div>
-            <LaunchToast />
+            {/* <LaunchToast /> */}
             <Navbar />
             {/* <Menu /> */}
             {children}
