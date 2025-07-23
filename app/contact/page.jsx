@@ -1,4 +1,5 @@
 "use client";
+import NormalButton from '@/components/buttons/normalButton';
 import ContactForm from '@/components/contact-form'
 import CtaSection from '@/components/ctaSection'
 import React from 'react'
@@ -24,8 +25,13 @@ const page = () => {
               className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
             >
               Questions on pricing, security, or setup? We reply within one business day.
-
             </p>
+            <div data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600">
+              <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} className='min-w-[200px] mt-2' isOpenNextTab={true} />
+            </div>
+
           </div>
         </div>
       </div>

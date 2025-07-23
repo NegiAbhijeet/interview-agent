@@ -26,75 +26,60 @@ const personalPlans = [
     },
     {
         name: "Starter Practice",
-        price: "$40",
+        price: "$56",
         period: "one time",
-        description: "50 interviews + 30 free for getting started",
+        description: "1500 minutes (~100 interviews) with bonus",
         icon: <Star className="w-6 h-6" />,
         features: [
-            "50 interviews included",
-            "30 bonus interviews",
+            "1500 minutes included",
+            "70 interviews + 30 free",
             "$0.8 per interview",
-            "Total: 80 interviews",
-            "Basic support"
+            "Total: ~100 interviews",
+            "Dedicated support"
         ],
         buttonText: "Buy Now",
-        popular: false,
+        popular: true,
         gradient: "from-gray-50 to-white",
         borderColor: "border-gray-200",
         buttonStyle: "bg-gray-900 hover:bg-gray-800 text-white",
     },
-    // {
-    //     name: "Interview Pro",
-    //     price: "$48",
-    //     period: "one-time",
-    //     description: "80 interviews + 30 free for serious prep",
-    //     icon: <Zap className="w-6 h-6" />,
-    //     features: [
-    //         "80 interviews included",
-    //         "30 bonus interviews",
-    //         "$0.6 per interview",
-    //         "Total: 110 interviews",
-    //         "Priority support"
-    //     ],
-    //     buttonText: "Buy Now",
-    //     popular: true,
-    //     gradient: "from-blue-50 to-blue-100",
-    //     borderColor: "border-blue-200",
-    //     buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
-    // },
     {
-        name: "Confidence Max",
-        price: "$75",
+        name: "Interview Pro",
+        price: "$80",
         period: "one time",
-        description: "150 interviews + 30 free for max readiness",
-        icon: <Crown className="w-6 h-6" />,
+        description: "2700 minutes (~200 interviews) for serious prep",
+        icon: <Zap className="w-6 h-6" />,
         features: [
-            "150 interviews included",
-            "30 bonus interviews",
+            "2700 minutes included",
+            "160 interviews + 40 free",
             "$0.5 per interview",
-            "Total: 180 interviews",
-            "Premium support"
+            "Total: ~200 interviews",
+            "Login up to 5 accounts",
+            "Dedicated support"
         ],
         buttonText: "Buy Now",
         popular: false,
-        gradient: "from-yellow-50 to-yellow-100",
-        borderColor: "border-yellow-200",
-        buttonStyle: "bg-yellow-500 hover:bg-yellow-600 text-white",
+        gradient: "from-blue-50 to-blue-100",
+        borderColor: "border-blue-200",
+        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
     },
-]
+];
+
 
 const businessPlans = [
     {
         name: "Professional",
         price: "$400",
         period: "one time",
-        description: "1–200 interviews for small teams",
+        description: "3,000 minutes (~200 interviews) for small teams",
         icon: <Zap className="w-6 h-6" />,
         features: [
-            "Up to 200 interviews",
+            "3,000 minutes included",
             "$2 per interview",
-            "₹34,200 approx",
-            "Basic insights & reporting"
+            "1 Admin account",
+            "5 HRs can be added",
+            "24/7 Dedicated Support",
+            "Cancel within 15 days"
         ],
         buttonText: "Get Started",
         popular: false,
@@ -107,14 +92,15 @@ const businessPlans = [
         name: "Team Connect",
         price: "$1,800",
         period: "one time",
-        description: "201–1000 interviews for growing teams",
+        description: "15,000 minutes (~1000 interviews) for growing teams",
         icon: <Star className="w-6 h-6" />,
         features: [
-            "Up to 1000 interviews",
+            "15,000 minutes included",
             "$1.8 per interview",
-            "₹1,54,000 approx",
-            "Team analytics",
-            "Email support"
+            "1 Admin account",
+            "15 HRs can be added",
+            "24/7 Dedicated Support",
+            "Cancel within 21 days"
         ],
         buttonText: "Buy Now",
         popular: true,
@@ -122,52 +108,33 @@ const businessPlans = [
         borderColor: "border-blue-200",
         buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
     },
-    // {
-    //     name: "Scale",
-    //     price: "$7,500",
-    //     period: "one-time",
-    //     description: "1001–5000 interviews for scaling businesses",
-    //     icon: <Crown className="w-6 h-6" />,
-    //     features: [
-    //         "Up to 5000 interviews",
-    //         "$1.5 per interview",
-    //         "₹6.4 lakhs approx",
-    //         "Advanced insights",
-    //         "Priority support"
-    //     ],
-    //     buttonText: "Buy Now",
-    //     popular: false,
-    //     gradient: "from-purple-50 to-purple-100",
-    //     borderColor: "border-purple-200",
-    //     buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
-    // },
     {
-        name: "Enterprise",
-        price: "$20,000+",
-        period: "custom",
-        description: "5000–20,000+ interviews, tailored to your needs",
-        icon: <Building2 className="w-6 h-6" />,
+        name: "Scale",
+        price: "$7,500",
+        period: "one time",
+        description: "75,000 minutes (~5,000 interviews) for large teams",
+        icon: <Crown className="w-6 h-6" />,
         features: [
-            "Custom interview volume",
-            "$1 per interview",
-            "₹17 lakhs+ approx",
-            "Custom dashboards",
-            "Dedicated account manager",
-            "API access"
+            "75,000 minutes included",
+            "$1.5 per interview",
+            "3 Admin accounts",
+            "50 HRs can be added",
+            "Dedicated Support",
+            "Cancel within 1 month"
         ],
-        buttonText: "Contact Sales",
+        buttonText: "Buy Now",
         popular: false,
-        gradient: "from-indigo-50 via-purple-50 to-pink-50",
-        borderColor: "border-gradient-to-r from-indigo-200 to-purple-200",
-        buttonStyle:
-            "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white",
-    },
-]
+        gradient: "from-purple-50 to-purple-100",
+        borderColor: "border-purple-200",
+        buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
+    }
+];
+
 
 
 
 export default function PricingPlans() {
-    const [planType, setPlanType] = useState("personal")
+    const [planType, setPlanType] = useState("business")
     const plans = planType === "personal" ? personalPlans : businessPlans
 
     return (
@@ -180,26 +147,26 @@ export default function PricingPlans() {
                         data-aos-delay="400"
                     >
                         <button
-                            onClick={() => setPlanType("personal")}
-                            className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "personal"
-                                ? "bg-[#050d1a] text-white"
-                                : "bg-transparent text-gray-700 hover:bg-gray-200"
-                                }`}
-                        >
-                            Personal
-                        </button>
-                        <button
                             onClick={() => setPlanType("business")}
                             className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "business"
                                 ? "bg-black text-white"
                                 : "bg-transparent text-gray-700 hover:bg-gray-200"
                                 }`}
                         >
-                            Business
+                            Recuriters
+                        </button>
+                        <button
+                            onClick={() => setPlanType("personal")}
+                            className={`px-5 py-2 rounded-full transition-all duration-200 ${planType === "personal"
+                                ? "bg-[#050d1a] text-white"
+                                : "bg-transparent text-gray-700 hover:bg-gray-200"
+                                }`}
+                        >
+                            Candidates
                         </button>
                     </div>
 
-                
+
                     <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto mt-12">
                         {plans.map((plan, index) => (
                             <div
@@ -260,7 +227,7 @@ export default function PricingPlans() {
 
 
                     {/* Bottom Section */}
-                    <div className="text-center mt-16">
+                    {/* <div className="text-center mt-16">
                         <p className="text-gray-900/80 mb-6">All plans include a 14 day free trial. No credit card required.</p>
                         <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-900/90">
                             <div className="flex items-center gap-2">
@@ -271,16 +238,13 @@ export default function PricingPlans() {
                                 <Check className="w-4 h-4 text-green-600" />
                                 24/7 support
                             </div>
-                            {/* <div className="flex items-center gap-2">
-                                <Check className="w-4 h-4 text-green-600" />
-                                99.9% uptime
-                            </div> */}
+           
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
                                 Money back guarantee
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </div>
