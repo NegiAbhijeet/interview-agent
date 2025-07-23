@@ -16,7 +16,7 @@ const page = () => {
               data-aos-delay="0"
               data-aos-duration="600"
             >
-              Flexible Plans, Clear Costs.
+              Flexible <span className="text-gradient">Plans</span>, Clear Costs.
             </h1>
             <p
               data-aos="fade-up"
@@ -24,13 +24,13 @@ const page = () => {
               data-aos-duration="600"
               className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
             >
-              Both recruiters and candidates find their fit here.
+              Scale your recruitment with AI-powered interviews that work for teams of every size. From startups to enterprises, find the perfect plan that grows with your hiring needs - transparent pricing, powerful results.
             </p>
           </div>
         </div>
       </div>
 
-      <LayoutWrapper>
+      <LayoutWrapper removePadding={true}>
         <PricingPlans />
       </LayoutWrapper>
       <ContactForm

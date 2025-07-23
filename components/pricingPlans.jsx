@@ -43,25 +43,25 @@ const personalPlans = [
         borderColor: "border-gray-200",
         buttonStyle: "bg-gray-900 hover:bg-gray-800 text-white",
     },
-    {
-        name: "Interview Pro",
-        price: "$48",
-        period: "one-time",
-        description: "80 interviews + 30 free for serious prep",
-        icon: <Zap className="w-6 h-6" />,
-        features: [
-            "80 interviews included",
-            "30 bonus interviews",
-            "$0.6 per interview",
-            "Total: 110 interviews",
-            "Priority support"
-        ],
-        buttonText: "Buy Now",
-        popular: true,
-        gradient: "from-blue-50 to-blue-100",
-        borderColor: "border-blue-200",
-        buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
-    },
+    // {
+    //     name: "Interview Pro",
+    //     price: "$48",
+    //     period: "one-time",
+    //     description: "80 interviews + 30 free for serious prep",
+    //     icon: <Zap className="w-6 h-6" />,
+    //     features: [
+    //         "80 interviews included",
+    //         "30 bonus interviews",
+    //         "$0.6 per interview",
+    //         "Total: 110 interviews",
+    //         "Priority support"
+    //     ],
+    //     buttonText: "Buy Now",
+    //     popular: true,
+    //     gradient: "from-blue-50 to-blue-100",
+    //     borderColor: "border-blue-200",
+    //     buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
+    // },
     {
         name: "Confidence Max",
         price: "$75",
@@ -122,25 +122,25 @@ const businessPlans = [
         borderColor: "border-blue-200",
         buttonStyle: "bg-blue-600 hover:bg-blue-700 text-white",
     },
-    {
-        name: "Scale",
-        price: "$7,500",
-        period: "one-time",
-        description: "1001–5000 interviews for scaling businesses",
-        icon: <Crown className="w-6 h-6" />,
-        features: [
-            "Up to 5000 interviews",
-            "$1.5 per interview",
-            "₹6.4 lakhs approx",
-            "Advanced insights",
-            "Priority support"
-        ],
-        buttonText: "Buy Now",
-        popular: false,
-        gradient: "from-purple-50 to-purple-100",
-        borderColor: "border-purple-200",
-        buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
-    },
+    // {
+    //     name: "Scale",
+    //     price: "$7,500",
+    //     period: "one-time",
+    //     description: "1001–5000 interviews for scaling businesses",
+    //     icon: <Crown className="w-6 h-6" />,
+    //     features: [
+    //         "Up to 5000 interviews",
+    //         "$1.5 per interview",
+    //         "₹6.4 lakhs approx",
+    //         "Advanced insights",
+    //         "Priority support"
+    //     ],
+    //     buttonText: "Buy Now",
+    //     popular: false,
+    //     gradient: "from-purple-50 to-purple-100",
+    //     borderColor: "border-purple-200",
+    //     buttonStyle: "bg-purple-600 hover:bg-purple-700 text-white",
+    // },
     {
         name: "Enterprise",
         price: "$20,000+",
@@ -171,7 +171,7 @@ export default function PricingPlans() {
     const plans = planType === "personal" ? personalPlans : businessPlans
 
     return (
-        <div className="flex min-h-screen flex-col">
+        <div className="flex min-h-screen flex-col py-4 md:py-8 lg:py-12">
             <main className="flex-1">
                 <div className="min-h-screen pb-16">
                     {/* Toggle Buttons */}
@@ -199,30 +199,16 @@ export default function PricingPlans() {
                         </button>
                     </div>
 
-                    <div className="w-full text-center my-4" data-aos="zoom-in-up"
-                        data-aos-delay="700"
-                    >
-                        <p className="text-gray-900/80 text-xl">
-                            {
-                                planType === "personal" ? "Boost confidence with 15 free practice minutes every day. Upgrade for unlimited access."
-                                    :
-                                    "4 x 15-minute free trials to get started. Beyond that, tailored plans are available."
-                            }
-                        </p>
-                    </div>
-
-
-                    {/* Pricing Cards */}
+                
                     <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto mt-12">
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
-                                data-aos="fade-up"
-                                data-aos-delay={200 + index * 100}
-                                className={`w-full sm:w-[340px] md:w-[380px] lg:w-[400px] xl:w-[420px] relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex flex-col h-full min-h-[600px] ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
+                                // data-aos="fade-up"
+                                // data-aos-delay={200 + index * 100}
+                                className={`w-full sm:w-[300px] md:w-[300px] lg:w-[300px] xl:w-[320px] relative bg-gradient-to-br ${plan.gradient} rounded-2xl border-2 ${plan.borderColor} p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex flex-col h-full min-h-[600px] ${plan.popular || plan.recommended ? "ring-2 ring-offset-2" : ""
                                     } ${plan.popular ? "ring-blue-500" : plan.recommended ? "ring-purple-500" : ""}`}
                             >
-
                                 {/* Badges */}
                                 {plan.popular && (
                                     <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1">

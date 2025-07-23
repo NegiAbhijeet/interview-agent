@@ -15,7 +15,7 @@ const page = () => {
               data-aos-delay="0"
               data-aos-duration="600"
             >
-              Get in touch with our Hiring Experts.
+              <span className='text-gradient'>Contact</span> with our Hiring Experts.
             </h1>
             <p
               data-aos="fade-up"
