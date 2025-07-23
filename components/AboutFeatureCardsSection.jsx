@@ -16,33 +16,6 @@ import FeatureCard from "./FeatureCard";
 
 const features = [
     {
-        type: "Candidates",
-        icon: <Rocket className="h-7 w-7 text-blue-400" />, // Progress / Launching career
-        badgeColor: "blue",
-        title: "Master Your Moment. Own Your Future.",
-        description: "Are you truly ready? Or will you miss out?",
-        items: [
-            {
-                icon: <UserCheck className="h-5 w-5 text-indigo-400" />, // Practice-oriented
-                title: "Practice Daily, For Free",
-                desc: "Dive into unlimited AI mock interviews to sharpen your skills.",
-                color: "indigo",
-            },
-            {
-                icon: <Brain className="h-5 w-5 text-teal-400" />, // Learning/improvement
-                title: "Transform Weaknesses",
-                desc: "Get instant feedback to convert weak spots into undeniable strengths.",
-                color: "teal",
-            },
-            {
-                icon: <Sparkles className="h-5 w-5 text-emerald-400" />, // Confidence / self-assurance
-                title: "Unshakeable Confidence",
-                desc: "Walk into every interview not just ready, but unstoppable.",
-                color: "emerald",
-            },
-        ],
-    },
-    {
         type: "Recruiters",
         icon: <SearchCheck className="h-7 w-7 text-purple-400" />, // Precision in recruiting
         badgeColor: "purple",
@@ -69,6 +42,34 @@ const features = [
             },
         ],
     },
+    {
+        type: "Candidates",
+        icon: <Rocket className="h-7 w-7 text-blue-400" />, // Progress / Launching career
+        badgeColor: "blue",
+        title: "Master Your Moment. Own Your Future.",
+        description: "Are you truly ready? Or will you miss out?",
+        items: [
+            {
+                icon: <UserCheck className="h-5 w-5 text-indigo-400" />, // Practice-oriented
+                title: "Practice Daily, For Free",
+                desc: "Dive into unlimited AI mock interviews to sharpen your skills.",
+                color: "indigo",
+            },
+            {
+                icon: <Brain className="h-5 w-5 text-teal-400" />, // Learning/improvement
+                title: "Transform Weaknesses",
+                desc: "Get instant feedback to convert weak spots into undeniable strengths.",
+                color: "teal",
+            },
+            {
+                icon: <Sparkles className="h-5 w-5 text-emerald-400" />, // Confidence / self-assurance
+                title: "Unshakeable Confidence",
+                desc: "Walk into every interview not just ready, but unstoppable.",
+                color: "emerald",
+            },
+        ],
+    },
+
 ];
 
 export default function FeatureSectionStyled() {

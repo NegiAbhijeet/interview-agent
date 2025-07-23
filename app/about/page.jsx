@@ -16,31 +16,7 @@ import {
 import FeatureCard from "@/components/FeatureCard";
 
 const features = [
-  {
-    type: "Job Seekers",
-    icon: <GraduationCap className="h-7 w-7 text-blue-400" />, // learning/growth
-    badgeColor: "blue",
-    items: [
-      {
-        icon: <SearchCheck className="h-5 w-5 text-indigo-400" />,
-        title: "Your Next Opportunity Awaits",
-        desc: "This is your moment to master every interview.",
-        color: "indigo",
-      },
-      {
-        icon: <Lightbulb className="h-5 w-5 text-orange-400" />,
-        title: "Practice for Perfection",
-        desc: "Get instant AI feedback daily to pinpoint weaknesses and build unshakeable confidence.",
-        color: "orange",
-      },
-      {
-        icon: <Rocket className="h-5 w-5 text-teal-400" />,
-        title: "Be Unignorable",
-        desc: "Stop guessing and start excelling to secure your dream job or internship.",
-        color: "teal",
-      },
-    ],
-  },
+
   {
     type: "Recruiting Teams",
     icon: <Users className="h-7 w-7 text-purple-400" />, // team-focused
@@ -66,6 +42,31 @@ const features = [
       },
     ],
   },
+  {
+    type: "Job Seekers",
+    icon: <GraduationCap className="h-7 w-7 text-blue-400" />, // learning/growth
+    badgeColor: "blue",
+    items: [
+      {
+        icon: <SearchCheck className="h-5 w-5 text-indigo-400" />,
+        title: "Your Next Opportunity Awaits",
+        desc: "This is your moment to master every interview.",
+        color: "indigo",
+      },
+      {
+        icon: <Lightbulb className="h-5 w-5 text-orange-400" />,
+        title: "Practice for Perfection",
+        desc: "Get instant AI feedback daily to pinpoint weaknesses and build unshakeable confidence.",
+        color: "orange",
+      },
+      {
+        icon: <Rocket className="h-5 w-5 text-teal-400" />,
+        title: "Be Unignorable",
+        desc: "Stop guessing and start excelling to secure your dream job or internship.",
+        color: "teal",
+      },
+    ],
+  },
 ];
 
 
@@ -83,7 +84,7 @@ const page = () => {
                 data-aos-delay="0"
                 data-aos-duration="600"
               >
-                About <span className="text-gradient">AI</span> Interview Agent
+                About <span className="text-gradient">AI Interview Agent</span>
               </h1>
               <p
                 data-aos="fade-up"

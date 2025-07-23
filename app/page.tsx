@@ -51,7 +51,7 @@ export default function Page() {
               data-aos-delay="1000"
               data-aos-duration="600"
             >
-              <NormalButton text="Get a Demo" />
+              <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} isOpenNextTab={true} />
             </div>
           </div>
 

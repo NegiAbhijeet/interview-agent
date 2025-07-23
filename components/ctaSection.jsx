@@ -73,9 +73,9 @@ const CtaSection = () => {
           {/* <h2 className="text-4xl md:text-5xl font-bold">Let’s chat</h2> */}
           <p className="text-lg text-white/80 flex items-center justify-center"><span>Still Hiring the Old Way? You're Missing Out.&nbsp;</span><Lightbulb className='text-yellow-400' /></p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
-            <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} className='min-w-[200px]' />
+            <NormalButton text='Get a Demo' link={"https://calendly.com/saurabhdocsightai-com/30min"} className='min-w-[200px]' isOpenNextTab={true} />
 
-            <GradientButton text='▶ View 5 min demo' className='min-w-[200px]' />
+            <GradientButton text='▶ View 5 min demo' className='min-w-[200px]' link='https://youtu.be/ORD82mo_vxU' isOpenNextTab={true} />
           </div>
         </div>
       </div>
