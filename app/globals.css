@@ -13,13 +13,24 @@ html {
   .text-balance {
     text-wrap: balance;
   }
+
   .text-gradient {
     @apply bg-gradient-to-r from-purple-400 via-blue-400 to-pink-500 bg-clip-text text-transparent;
   }
+
   .bg-gradient {
-    @apply bg-gradient-to-r from-blue-400  to-pink-500;
+    @apply bg-gradient-to-r from-blue-400 to-pink-500;
+  }
+
+  .description-color {
+    @apply text-gray-700;
+  }
+
+  .card-border-color {
+    @apply border-gray-400/50;
   }
 }
+
 
 @layer base {
   :root {

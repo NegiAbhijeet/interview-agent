@@ -99,7 +99,7 @@ export default function TestimonialCards() {
                                         </div>
                                     </CardHeader>
                                     <CardContent className="flex flex-col flex-grow p-6 pt-0">
-                                        <blockquote className="text-sm text-muted-foreground italic text-center">
+                                        <blockquote className="text-sm description-color italic text-center">
                                             “{testimonial.quote}”
                                         </blockquote>
                                     </CardContent>

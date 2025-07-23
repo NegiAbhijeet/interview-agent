@@ -8,7 +8,7 @@ export default function FeatureCard({ section, idx }: { section: any; idx: numbe
       data-aos="fade-up"
       data-aos-delay={200 + idx * 100}
     >
-      <Card className="h-full">
+      <Card className="h-full card-border-color">
         <CardHeader className="relative z-10 p-0 pt-4 px-4 md:pt-6 md:px-6">
           <div className="flex items-center gap-4 mb-2">
             <div
@@ -44,7 +44,7 @@ export default function FeatureCard({ section, idx }: { section: any; idx: numbe
                   <p className="font-semibold text-base leading-relaxed mb-1">
                     {item.title}
                   </p>
-                  <p className="text-sm">{item.desc}</p>
+                  <p className="text-sm description-color">{item.desc}</p>
                 </div>
               </div>
             ))}

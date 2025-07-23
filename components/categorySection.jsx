@@ -43,7 +43,7 @@ const cardData = [
         ],
     },
     {
-        type: "Own Your Next Interview",
+        type: "Candidate Empowerment",
         icon: <SearchCheck className="h-7 w-7 text-purple-400" />, // Represents smart job search
         badgeColor: "purple",
         title: "Don't Just Apply. Dominate. Your Next Interview Awaits.",
