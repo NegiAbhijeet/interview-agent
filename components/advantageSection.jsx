@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarClock, Users, DollarSign, Lightbulb } from "lucide-react";
+import { CalendarClock, Users, DollarSign, Lightbulb, Briefcase } from "lucide-react";
 import { LayoutWrapper } from "./layout-wrapper";
 import {
   CardHeader,
@@ -39,12 +39,10 @@ const AdvantageSection = () => {
   return (
     <LayoutWrapper>
       <div className="w-full max-w-7xl mx-auto text-center">
-
-
         <HeadingComponentWrapper
-          icon={Lightbulb}
+          icon={Briefcase}
+          first={"Why Recruiters Choose Us"}
           second="Extra Edge Advantages for Recruiters"
-
         />
         <GlowingCards className="flex flex-wrap gap-4">
           {features.map((feature, index) => {
@@ -60,7 +58,7 @@ const AdvantageSection = () => {
                 glowColor={feature.glowColor}
                 className={`min-h-[230px] ${sizeClass} flex flex-col p-0`}
               >
-                <CardHeader>{feature.icon}</CardHeader>
+                <CardHeader className="w-full flex justify-center items-center">{feature.icon}</CardHeader>
                 <CardContent className="flex flex-col flex-grow px-4 pb-4">
                   <CardTitle className="mb-2 ">
                     {feature.title}
