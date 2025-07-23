@@ -9,12 +9,12 @@ import NormalButton from "@/components/buttons/normalButton";
 export default function Page() {
   return (
     <section className="relative overflow-hidden text-white">
-    
+
       <div className="text-center min-h-screen z-10 flex flex-col items-center justify-center relative overflow-hidden">
         <h1
           className="text-4xl md:text-6xl font-normal leading-tight text-black"
           data-aos="fade-up"
-          data-aos-delay="0"
+          data-aos-delay="300"
           data-aos-duration="600"
         >
           Meet <span className=" bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold">Nova</span>.
@@ -27,7 +27,7 @@ export default function Page() {
         <div
           className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-delay="600"
           data-aos-duration="600"
         >
           Nova is built for everyone in the interview ecosystem giving recruiters powerful tools and candidates a clear path to success.        </div>
