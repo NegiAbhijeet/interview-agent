@@ -25,13 +25,13 @@ const cardData = [
             {
                 icon: <BarChart3 className="h-5 w-5 text-yellow-400" />, // Represents productivity/growth
                 title: "Ignite Recruiter Productivity",
-                desc: "Increase recruiter output by up to 10x. Nova's automated screening lets your team focus solely on engaging perfect-fit candidates.",
+                desc: "Increase recruiter output by up to 10x. Nova's automated screening lets your team focus solely on engaging perfect fit candidates.",
                 color: "purple",
             },
             {
                 icon: <Target className="h-5 w-5 text-purple-400" />, // Accurate targeting of talent
                 title: "Never Miss Top Talent",
-                desc: "Engage every candidate with live, two-way conversations at scale, ensuring you never miss a great hire with smart scheduling.",
+                desc: "Engage every candidate with live, two way conversations at scale, ensuring you never miss a great hire with smart scheduling.",
                 color: "purple",
             },
             {

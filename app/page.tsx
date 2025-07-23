@@ -30,7 +30,7 @@ export default function Page() {
           data-aos-delay="300"
           data-aos-duration="600"
         >
-          Nova is built for everyone in the interview ecosystem — giving recruiters powerful tools and candidates a clear path to success.        </div>
+          Nova is built for everyone in the interview ecosystem giving recruiters powerful tools and candidates a clear path to success.        </div>
 
         <div
           className="mt-8 flex items-center gap-4 justify-center w-full"

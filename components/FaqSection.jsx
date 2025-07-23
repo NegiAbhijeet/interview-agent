@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "Do minutes expire?",
     answer:
-      "No, your purchased minutes do not expire. Use them whenever you need — total flexibility, no pressure.",
+      "No, your purchased minutes do not expire. Use them whenever you need total flexibility, no pressure.",
   },
   {
     question: "Can I get a refund if I don’t use all my minutes?",
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Do I need a subscription?",
     answer:
-      "Nope! We operate on a pay-as-you-go model. Just buy the pack that suits your needs—no recurring billing or surprise charges.",
+      "Nope! We operate on a pay as you go model. Just buy the pack that suits your needs no recurring billing or surprise charges.",
   },
   {
     question: "Is support included with my purchase?",

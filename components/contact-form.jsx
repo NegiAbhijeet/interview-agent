@@ -132,7 +132,7 @@ const ContactForm = ({ heading, description }) => {
             <Card className="bg-white text-black shadow-lg">
               <CardHeader>
                 <CardTitle className="text-black">
-                  Questions about AI-powered screening?
+                  Questions about AI powered screening?
                 </CardTitle>
                 <CardDescription className="text-gray-900/80">
                   Tell us what you need. A member of our team replies within one business day.

@@ -14,7 +14,7 @@ const Footer = () => {
                         </span>
                     </Link>
                     <p className="mt-4 text-gray-900/80">
-                        Empowering Job Seekers and Recruiters with AI-driven interview preparation and seamless interview experiences.
+                        Empowering Job Seekers and Recruiters with AI driven interview preparation and seamless interview experiences.
                     </p>
 
                     {/* Social Media Links */}

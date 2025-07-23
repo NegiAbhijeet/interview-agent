@@ -27,7 +27,7 @@ const personalPlans = [
     {
         name: "Starter Practice",
         price: "$40",
-        period: "one-time",
+        period: "one time",
         description: "50 interviews + 30 free for getting started",
         icon: <Star className="w-6 h-6" />,
         features: [
@@ -65,7 +65,7 @@ const personalPlans = [
     {
         name: "Confidence Max",
         price: "$75",
-        period: "one-time",
+        period: "one time",
         description: "150 interviews + 30 free for max readiness",
         icon: <Crown className="w-6 h-6" />,
         features: [
@@ -87,7 +87,7 @@ const businessPlans = [
     {
         name: "Professional",
         price: "$400",
-        period: "one-time",
+        period: "one time",
         description: "1–200 interviews for small teams",
         icon: <Zap className="w-6 h-6" />,
         features: [
@@ -106,7 +106,7 @@ const businessPlans = [
     {
         name: "Team Connect",
         price: "$1,800",
-        period: "one-time",
+        period: "one time",
         description: "201–1000 interviews for growing teams",
         icon: <Star className="w-6 h-6" />,
         features: [
@@ -261,7 +261,7 @@ export default function PricingPlans() {
 
                     {/* Bottom Section */}
                     <div className="text-center mt-16">
-                        <p className="text-gray-900/80 mb-6">All plans include a 14-day free trial. No credit card required.</p>
+                        <p className="text-gray-900/80 mb-6">All plans include a 14 day free trial. No credit card required.</p>
                         <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-900/90">
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
@@ -277,7 +277,7 @@ export default function PricingPlans() {
                             </div> */}
                             <div className="flex items-center gap-2">
                                 <Check className="w-4 h-4 text-green-600" />
-                                Money-back guarantee
+                                Money back guarantee
                             </div>
                         </div>
                     </div>

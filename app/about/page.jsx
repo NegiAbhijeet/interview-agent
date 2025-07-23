@@ -55,7 +55,7 @@ const features = [
       {
         icon: <BarChart className="h-5 w-5 text-orange-400" />,
         title: "Strategic Advantage",
-        desc: "Slash screening time, gain crystal-clear data, and handle hundreds & thousands of interviews with unprecedented speed.",
+        desc: "Slash screening time, gain crystal clear data, and handle hundreds & thousands of interviews with unprecedented speed.",
         color: "orange",
       },
       {
@@ -91,11 +91,11 @@ const page = () => {
               data-aos-duration="600"
               className="mt-6 max-w-4xl mx-auto text-2xl font-light text-gray-700"
             >
-              Nova revolutionizes first-round interviews by eliminating manual
+              Nova revolutionizes first round interviews by eliminating manual
               screening and unconscious bias. Our intelligent agent(Nova) asks
               scripted questions, precisely scores every response, and
               delivers clear, actionable reports within minutes. This means
-              recruiters can hire faster with data-backed decisions, while job
+              recruiters can hire faster with data backed decisions, while job
               seekers can practice daily for free to sharpen their skills and
               boost their confidence. It's the future of talent acquisition,
               simplified.            </p>
@@ -113,9 +113,9 @@ const page = () => {
                   first="Our Mission"
                   second="Revolutionizing Interview Preparation"
                   third="We're revolutionizing talent discovery and preparation. Our
-                  vision is to redefine first-round interviews, creating a
+                  vision is to redefine first round interviews, creating a
                   seamless and equitable experience. We empower recruiting teams
-                  with rapid, objective assessments for data-driven hires, while
+                  with rapid, objective assessments for data driven hires, while
                   equipping job seekers with tools to master interviews and
                   confidently seize their future. This is building a smarter,
                   fairer future for talent worldwide."

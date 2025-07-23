@@ -24,7 +24,7 @@ const testimonials = [
         role: "Recruitment Operations Manager, StellarWorks",
         image: "https://randomuser.me/api/portraits/men/75.jpg",
         quote:
-            "Interview insights are instant, and we’ve eliminated subjective bias. It’s a game-changer for our team.",
+            "Interview insights are instant, and we’ve eliminated subjective bias. It’s a game changer for our team.",
         glowColor: "blue",
     },
     {
@@ -32,7 +32,7 @@ const testimonials = [
         role: "Software Engineer Candidate",
         image: "https://randomuser.me/api/portraits/men/65.jpg",
         quote:
-            "15 free practice minutes a day let me fine-tune my answers. I walked into the real interview ready and confident.",
+            "15 free practice minutes a day let me fine tune my answers. I walked into the real interview ready and confident.",
         glowColor: "green",
     },
     {
@@ -40,7 +40,7 @@ const testimonials = [
         role: "HR Consultant, BrightHire Solutions",
         image: "https://randomuser.me/api/portraits/men/41.jpg",
         quote:
-            "Scheduling AI-led screenings is seamless. It saves us time and delivers consistent results.",
+            "Scheduling AI led screenings is seamless. It saves us time and delivers consistent results.",
         glowColor: "yellow",
     },
 ];

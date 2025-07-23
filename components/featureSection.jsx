@@ -36,7 +36,7 @@ const features = [
     colSpan: "sm:col-span-8", // wide
   },
   {
-    title: "AI-Powered Agent",
+    title: "AI Powered Agent",
     description:
       "Our intelligent agent joins every call, asks all your predefined questions, and meticulously logs each answer. It's like having an extra team member for every interview.",
     icon: <Bot className="h-6 w-6 text-blue-500" />,

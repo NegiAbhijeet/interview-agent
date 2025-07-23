@@ -57,8 +57,8 @@ const features = [
             },
             {
                 icon: <BarChart className="h-5 w-5 text-teal-400" />, // Insight-driven hiring
-                title: "Data-Rich Decisions",
-                desc: "Get bias-free reports and crystal-clear insights for confident wins.",
+                title: "Data Rich Decisions",
+                desc: "Get bias free reports and crystal clear insights for confident wins.",
                 color: "teal",
             },
             {

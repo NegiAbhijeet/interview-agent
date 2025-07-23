@@ -31,7 +31,7 @@ const AdvantageSection = () => {
       icon: <DollarSign className="w-8 h-8 text-[#3b82f6]" />,
       title: "Interview 93% Cheaper",
       description:
-        "Maximize your top-of-funnel with automated reminders and follow-ups, engaging more candidates for less.",
+        "Maximize your top of funnel with automated reminders and follow ups, engaging more candidates for less.",
       glowColor: "#3b82f6",
     },
   ];
